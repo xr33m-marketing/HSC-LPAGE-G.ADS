@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 98%;
+    --muted-foreground: 0 0% 70%;
+    --primary: 0 0% 12%;
+    --primary-light: 0 0% 17%;
+    --accent: 22 100% 50%;
+    --accent-light: 22 95% 55%;
+    --secondary: 40 30% 75%;
+    --secondary-light: 40 30% 85%;
+    --granite-light: 0 0% 23%;
+    --granite-medium: 0 0% 19%;
+    --granite-dark: 0 0% 17%;
+    --granite-darker: 0 0% 12%;
+  }
+}
+
+/* Critical styles */
+.perspective-1000 {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.translate-z-0 {
+  transform: translateZ(0);
+}
+
+.translate-z-\[-100px\] {
+  transform: translateZ(-100px);
+}
+
+.translate-z-\[-200px\] {
+  transform: translateZ(-200px);
+}
+
+.translate-z-\[-300px\] {
+  transform: translateZ(-300px);
+}
+
+/* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+#root {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 0;
+  background-color: hsl(var(--background));
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Performance optimizations */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  content-visibility: auto;
+  will-change: auto;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Reduce layout shifts */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improve touch targets */
+@media (max-width: 640px) {
+  button, 
+  a {
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Form element optimizations */
+input, 
+textarea, 
+select {
+  font-size: 16px !important;
+  max-width: 100%;
+}
+
+/* Add smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Cinematic hero animations with GPU acceleration */
+@keyframes subtle-pan {
+  0% {
+    transform: scale(1.05) translateX(0) translateZ(0);
+  }
+  100% {
+    transform: scale(1.05) translateX(-2%) translateZ(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg) translateZ(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translate(10%, 10%) rotate(180deg) translateZ(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(0%, 0%) rotate(360deg) translateZ(0);
+    opacity: 0.3;
+  }
+}
+
+.hero-background {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.animate-gradient {
+  animation: gradient 15s ease-in-out infinite;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+/* Hide scrollbar but allow scrolling */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Embla Carousel Styles */
+.embla {
+  --slide-spacing: 0;
+  --slide-size: 100%;
+  --slide-height: 90vh;
+  overflow: hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y;
+  margin-left: calc(var(--slide-spacing) * -1);
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  position: relative;
+  height: var(--slide-height);
+}
+
+/* Custom granite color classes */
+.bg-granite {
+  background-color: hsl(var(--background));
+}
+
+.bg-granite-light {
+  background-color: hsl(var(--granite-light));
+}
+
+.bg-granite-medium {
+  background-color: hsl(var(--granite-medium));
+}
+
+.bg-granite-dark {
+  background-color: hsl(var(--granite-dark));
+}
+
+.bg-granite-darker {
+  background-color: hsl(var(--granite-darker));
+}
