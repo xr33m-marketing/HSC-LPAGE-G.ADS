@@ -52,7 +52,7 @@ export default function ServiceHero({
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/xldwqdrp', {
+      const response = await fetch('https://formspree.io/f/xvgqzbeo', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',
@@ -294,7 +294,7 @@ export default function ServiceHero({
                 <form
                   onSubmit={handleSubmit}
                   className="space-y-4"
-                  action="https://formspree.io/f/xldwqdrp"
+                  action="https://formspree.io/f/xvgqzbeo"
                   method="POST"
                 >
                   <div className="grid grid-cols-2 gap-4">
