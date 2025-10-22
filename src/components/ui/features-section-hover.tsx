@@ -65,7 +65,7 @@ export function FeaturesSectionWithHoverEffects() {
       icon: <Users className="w-8 h-8" />,
     },
     {
-      title: "10-Year Guarantee",
+      title: "24-Month Workmanship Guarantee",
       description:
         "Every job backed by our comprehensive workmanship warranty. Built to last.",
       icon: <Shield className="w-8 h-8" />,

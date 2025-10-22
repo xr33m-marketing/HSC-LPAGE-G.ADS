@@ -20,7 +20,7 @@ const trustBadges = [
   },
   {
     icon: Shield,
-    text: '10-Year Workmanship Guarantee',
+    text: '24-Month Workmanship Guarantee',
     color: 'text-green-400'
   },
   {

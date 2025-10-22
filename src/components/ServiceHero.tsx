@@ -158,7 +158,7 @@ export default function ServiceHero({
             {/* Support Line - Solution */}
             <ScrollReveal width="100%" delay={0.6}>
               <p className="text-white text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-                Our expert team transforms tired driveways into flawless entrances — backed by a 10-Year Guarantee.
+                Our expert team transforms tired driveways into flawless entrances — backed by a 24-Month Workmanship Guarantee.
               </p>
             </ScrollReveal>
 

@@ -14,7 +14,7 @@ function App() {
       image: "https://imgur.com/zfWY92r.jpg",
       features: [
         "Premium Materials",
-        "10-Year Guarantee",
+        "24-Month Workmanship Guarantee",
         "Professional Installation",
         "Free Design Service"
       ],
