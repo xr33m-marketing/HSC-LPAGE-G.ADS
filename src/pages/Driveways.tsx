@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import { FeaturesSectionWithHoverEffects } from '../components/ui/features-section-hover';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../components/ScrollReveal';
 import RecentProjectsCarousel from '../components/RecentProjectsCarousel';
+import { StickyTopNavBar } from '../components/StickyTopNavBar';
 
 const drivewayHeadlines = [
   "Cracked Paving?",
@@ -72,6 +73,7 @@ export default function Driveways() {
 
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
+      <StickyTopNavBar />
       <ServiceHero
         headlines={drivewayHeadlines}
         backgroundImage="/HSC-HERO-DRIVEWAY.webp"

@@ -13,6 +13,10 @@ interface NavItem {
 const navItems: NavItem[] = [
   { name: "Landscaping", url: "/", icon: Flower2 },
   { name: "Driveways", url: "/driveways", icon: Construction },
+  { name: "Artificial Turf", url: "/artificial-turf", icon: Trees },
+  { name: "Fencing", url: "/fencing", icon: Fence },
+  { name: "Patios & Decking", url: "/patios-decking", icon: LayoutDashboard },
+  { name: "Retaining Walls", url: "/retaining-walls", icon: Wall },
 ];
 
 export function StickyTopNavBar() {

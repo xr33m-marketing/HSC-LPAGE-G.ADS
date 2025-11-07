@@ -12,7 +12,12 @@ initGoogleAds();
 initGclidTracking();
 
 // Lazy load pages with prefetching hints
+const Landscaping = () => import(/* webpackPrefetch: true */ './pages/Landscaping');
 const Driveways = () => import(/* webpackPrefetch: true */ './pages/Driveways');
+const ArtificialTurf = () => import(/* webpackPrefetch: true */ './pages/archived/ArtificialTurf');
+const Fencing = () => import(/* webpackPrefetch: true */ './pages/archived/Fencing');
+const PatiosDecking = () => import(/* webpackPrefetch: true */ './pages/archived/PatiosDecking');
+const RetainingWalls = () => import(/* webpackPrefetch: true */ './pages/archived/RetainingWalls');
 const PrivacyPolicy = () => import(/* webpackPrefetch: true */ './pages/PrivacyPolicy');
 const ThankYouDriveways = () => import(/* webpackPrefetch: true */ './pages/thank-you/ThankYouDriveways');
 
@@ -21,8 +26,12 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<DeferredComponent component={Driveways} />} />
-      <Route path="/driveways" element={<Navigate to="/" replace />} />
+      <Route path="/" element={<DeferredComponent component={Landscaping} />} />
+      <Route path="/driveways" element={<DeferredComponent component={Driveways} />} />
+      <Route path="/artificial-turf" element={<DeferredComponent component={ArtificialTurf} />} />
+      <Route path="/fencing" element={<DeferredComponent component={Fencing} />} />
+      <Route path="/patios-decking" element={<DeferredComponent component={PatiosDecking} />} />
+      <Route path="/retaining-walls" element={<DeferredComponent component={RetainingWalls} />} />
       <Route path="/privacy-policy" element={<DeferredComponent component={PrivacyPolicy} />} />
       <Route path="/thank-you-driveways" element={<DeferredComponent component={ThankYouDriveways} />} />
       <Route path="*" element={<Navigate to="/" replace />} />

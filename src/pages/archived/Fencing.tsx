@@ -1,326 +1,232 @@
 import React from 'react';
 import { Star, Check, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { StickyTopNavBar } from '../components/StickyTopNavBar';
-import { TestimonialsSection } from '../components/ui/TestimonialsSection';
-import { FeatureSteps } from '../components/ui/feature-steps';
-import { defaultFeatureSteps } from '../components/FeatureStepsData';
-import BeforeAfterCarousel from '../components/ui/before-after-carousel';
-import ServiceHero from '../components/ServiceHero';
-import ReferralSection from '../components/ReferralSection';
-import Footer from '../components/Footer';
+import { TestimonialsSection } from '../../components/ui/TestimonialsSection';
+import { FeatureSteps } from '../../components/ui/feature-steps';
+import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
+import ServiceHero from '../../components/ServiceHero';
+import Footer from '../../components/Footer';
+import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
+import { StickyTopNavBar } from '../../components/StickyTopNavBar';
 
 const fencingHeadlines = [
   "Leaning Fence Posts?",
   "Loose, Wobbly Panels?",
-  "Zero Privacy?",
+  "Gaps & Missing Boards?",
   "Storm Damage?",
-  "Rotting Timber?",
-  "Cracked or Split Panels?"
+  "Privacy Concerns?",
+  "Boundary Disputes?"
 ];
 
-const fencingProjects = [
+const beforeAfterProjects = [
   {
-    title: "Modern Privacy Fence",
-    description: "Complete fence replacement with premium timber panels",
-    image: "https://imgur.com/i230zVz.jpg",
-    category: "Privacy Fence",
-    location: "Glasgow",
-    duration: "3 days"
-  },
-  {
-    title: "Garden Security Upgrade",
-    description: "High-security fencing with integrated planters",
-    image: "https://imgur.com/Orv62sB.jpg",
-    category: "Security Fence",
-    location: "Bearsden",
-    duration: "4 days"
-  },
-  {
-    title: "Traditional Picket Fence",
-    description: "Classic white picket fence with custom gate design",
-    image: "https://imgur.com/54XBaBU.jpg",
-    category: "Picket Fence",
-    location: "Clydebank",
-    duration: "2 days"
+    beforeImage: "https://imgur.com/Orv62sB.jpg",
+    afterImage: "https://imgur.com/rH1nNs6.jpg"
   }
 ];
 
-function Fencing() {
+export default function Fencing() {
   const testimonials = [
     {
       author: {
-        name: "David Wilson",
+        name: "Stephen Brandon",
         image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop",
         title: "Verified Customer"
       },
-      text: "Excellent job on our garden fence. The team was professional and completed the work ahead of schedule."
+      text: "I contacted Hugh to quote me on mending my broken gate post. He came out to quote when he said he would and came out to do the job on the day agreed. The work is to a good standard and the guys left the area clean & tidy."
     },
     {
       author: {
-        name: "Sarah Thompson",
-        image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop",
-        title: "Verified Customer"
-      },
-      text: "Very impressed with the quality of work. Our new fence looks fantastic and gives us complete privacy."
-    },
-    {
-      author: {
-        name: "Michael Brown",
+        name: "Ross Taylor",
         image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop",
         title: "Verified Customer"
       },
-      text: "Professional service from start to finish. Fair price and great attention to detail."
+      text: "Contacted HSC Builders after suffering storm damage to both mine and my neighbours fences. Scott came out the very next day, provided a fair price. The work was booked within a week. Very impressed with their professionalism!"
     }
   ];
 
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
-      <ServiceHero 
+      <ServiceHero
         headlines={fencingHeadlines}
-        backgroundImage="https://imgur.com/Dj99DuU.jpg"
-        carouselImages={[
-          "https://imgur.com/AT4ugae.jpg",
-          "https://imgur.com/8Axqv6S.jpg"
-        ]}
+        backgroundImage="https://imgur.com/Orv62sB.jpg"
+        carouselImages={["https://imgur.com/Orv62sB.jpg"]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
-          "Pick Your Free Upgrade: Jet Wash Finish, Garden Tidy-Up, or Timber Treatment"
+          "Pick Your Free Upgrade: Jet Wash Finish, Garden Tidy-Up, or Dump Run"
         ]}
         offer="No pressure. Just answers, expert ideas, and a plan you'll love."
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
-        thankYouPage="/thank-you-fencing"
+        thankYouPage="/thank-you-driveways"
         service="fencing"
       />
 
-      {/* Pain Points Section */}
-      <section className="py-16 bg-granite-medium">
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Fence's Not Getting Better on Its Own</h2>
-          <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
-            <p>Rotting posts. Gaps between panels. That section that's starting to lean.</p>
-            <p>You've looked at it and thought <i>"we really need to fix this"</i> — then let it go another 6 months.</p>
-            <p>Meanwhile, the wood deteriorates. The lean gets worse. That temporary fix from last summer is falling apart.</p>
-            <p className="font-semibold">Let's fix it once — and do it right.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Solution Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Built To Last. Designed For You. Done Properly.</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-200 mb-8 text-center">
-              We don't cut corners, use cheap materials, or leave you with wobbly posts.
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+              That Fence Won't Fix Itself
+            </h2>
+          </ScrollReveal>
+          <StaggerContainer className="max-w-4xl mx-auto space-y-6 text-lg text-gray-200">
+            <p>Every storm makes it worse. Privacy's gone. Neighbors can see everything. And you're worried it'll blow down completely.</p>
+            <p>You know it needs sorted — but finding reliable fencing contractors, getting quotes, coordinating everything… it feels like a hassle.</p>
+            <p>That's why we built a process that's simple, collaborative, and completely pressure-free.</p>
+            <p className="font-semibold text-white text-xl border-l-4 border-accent pl-6 py-2">
+              Here's how we make getting your fence sorted feel easy — and make sure it lasts for years to come.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Deep post holes</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Concrete footings</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Level ground prep</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Premium timber</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Galvanized fixings</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Treated posts</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">17+ years experience</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Local knowledge</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Planning compliance</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          </StaggerContainer>
         </div>
       </section>
 
-      {/* Gallery Section */}
+      <section className="py-16 bg-granite-darker">
+        <div className="container mx-auto px-4">
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Solid Fencing. Built To Last. Designed For Your Property.</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
+              We don't use weak posts or skip the groundwork. Every fence we build is engineered to withstand Glasgow's weather with proper concrete footings and quality materials.
+            </p>
+          </ScrollReveal>
+
+          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Concrete footings</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Level installation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Old fence removal</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Pressure-treated timber</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Galvanized fixings</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Gravel boards included</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">17+ years experience</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Fast installation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Guaranteed workmanship</span>
+                </li>
+              </ul>
+            </div>
+          </StaggerContainer>
+
+          <FadeIn delay={0.8}>
+            <div className="max-w-5xl mx-auto mt-6 text-center">
+              <a href="tel:07490738974" className="inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl">
+                <Phone className="w-6 h-6" />
+                No Harm In Calling
+              </a>
+            </div>
+          </FadeIn>
+        </div>
+      </section>
+
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">Every fence starts as a mess.</h2>
-          <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-            Too old. Too damaged. Too unsightly. These ones were exactly the same — until we got stuck in.
-          </p>
-          <BeforeAfterCarousel projects={fencingProjects} />
+          <ScrollReveal width="100%">
+            <h2 className="text-4xl font-bold text-center mb-4 text-white">Fencing Transformations</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
+              From broken and unstable to secure, private, and built to last.
+            </p>
+          </ScrollReveal>
+          <FadeIn delay={0.3}>
+            <BeforeAfterCarousel projects={beforeAfterProjects} />
+          </FadeIn>
         </div>
       </section>
 
-      {/* Feature Steps Section */}
       <FeatureSteps
-        features={defaultFeatureSteps}
+        features={[
+          { step: "Free On-Site Consultation", content: "We visit your property to assess your fencing needs, discuss panel styles, and provide a clear quote.", image: "/HSC-STEP1-PROCESS copy.webp" },
+          { step: "Professional Installation", content: "Our team removes old fencing, installs concrete posts, and fits premium panels with proper fixings.", image: "/step2-HSC-PROCESS copy.webp" },
+          { step: "Final Inspection & Cleanup", content: "We ensure everything is level, secure, and tidy before completing the job.", image: "/step3-HSC-PROCESS copy.webp" }
+        ]}
         title="How It Works – A Simple 3-Step Process"
+        subtitle="Most fencing projects completed in 2–3 days."
         className="bg-granite-light"
       />
 
-      {/* Reviews Section */}
-      <TestimonialsSection
-        title="What Our Customers Say"
-        description="Read trusted reviews from our satisfied customers"
-        testimonials={testimonials}
-        className="bg-granite-medium"
-      />
+      <TestimonialsSection title="What Our Customers Say" description="Read trusted reviews from our satisfied customers" testimonials={testimonials} className="bg-granite-medium" />
 
-      {/* Trust Indicators Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Glasgow Homeowners Trust Us</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Star className="w-12 h-12 text-yellow-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">100+ 5-Star Reviews</h3>
-              <p className="text-gray-300">On Google & Trustpilot</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Clock className="w-12 h-12 text-[#FF5733]" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">17+ Years Experience</h3>
-              <p className="text-gray-300">Serving Glasgow</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">10-Year Guarantee</h3>
-              <p className="text-gray-300">Workmanship Warranty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Referral Section */}
-      <ReferralSection service="fence" />
-
-      {/* Local Map & Trust Badges Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            We're Local. We're Trusted. We're Working Near You.
-          </h2>
-          
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">We're Local. We're Trusted. We're Working Near You.</h2>
+          </ScrollReveal>
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Map */}
-            <div className="rounded-lg overflow-hidden shadow-lg google-map">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Property%20Renovators%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk"
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="HSC Builders Location"
-                className="w-full"
-              ></iframe>
-            </div>
-
-            {/* Trust Badges & Contact */}
-            <div className="space-y-8">
-              <div className="grid gap-4">
-                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Star className="text-yellow-400 w-8 h-8" />
-                  <div>
-                    <h3 className="font-bold text-white">100+ 5-Star Google Reviews</h3>
-                    <p className="text-gray-300">Trusted by local homeowners</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <MapPin className="text-[#FF5733] w-8 h-8" />
-                  <div>
-                    <h3 className="font-bold text-white">Covering All Glasgow Areas</h3>
-                    <p className="text-gray-300">Southside, Clydebank, Bearsden, Partick & More</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Clock className="text-[#FF5733] w-8 h-8" />
-                  <div>
-                    <h3 className="font-bold text-white">17+ Years Experience</h3>
-                    <p className="text-gray-300">Serving the local community</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Shield className="text-[#FF5733] w-8 h-8" />
-                  <div>
-                    <h3 className="font-bold text-white">Licensed & Insured</h3>
-                    <p className="text-gray-300">Fully vetted, professional crew</p>
-                  </div>
-                </div>
+            <ScrollReveal direction="left" delay={0.2}>
+              <div className="rounded-lg overflow-hidden shadow-lg">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Property%20Renovators%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk" width="100%" height="400" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="HSC Builders Location"></iframe>
               </div>
-
-              <div className="bg-granite-light p-6 rounded-lg shadow-sm space-y-4 border border-gray-600">
-                <div className="flex items-center gap-3">
-                  <Phone className="text-[#FF5733] w-6 h-6" />
-                  <span className="font-bold text-white">07490738974</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Mail className="text-[#FF5733] w-6 h-6" />
-                  <span className="text-white">hscbuildersglasgow@gmail.com</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                  <span className="text-gray-300">WhatsApp available for fast replies</span>
-                </div>
+            </ScrollReveal>
+            <ScrollReveal direction="right" delay={0.2}>
+              <div className="space-y-8">
+                <StaggerContainer className="grid gap-4">
+                  <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg border border-gray-600">
+                    <Star className="text-yellow-400 w-8 h-8" />
+                    <div><h3 className="font-bold text-white">24 5-Star Google Reviews</h3><p className="text-gray-300">Trusted by local homeowners</p></div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg border border-gray-600">
+                    <MapPin className="text-accent w-8 h-8" />
+                    <div><h3 className="font-bold text-white">Covering All Glasgow Areas</h3><p className="text-gray-300">Southside, Clydebank, Bearsden & More</p></div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg border border-gray-600">
+                    <Clock className="text-accent w-8 h-8" />
+                    <div><h3 className="font-bold text-white">17+ Years Experience</h3><p className="text-gray-300">Serving the local community</p></div>
+                  </div>
+                  <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg border border-gray-600">
+                    <Shield className="text-accent w-8 h-8" />
+                    <div><h3 className="font-bold text-white">Licensed & Insured</h3><p className="text-gray-300">Fully vetted, professional crew</p></div>
+                  </div>
+                </StaggerContainer>
+                <FadeIn delay={0.6}>
+                  <div className="bg-granite-light p-6 rounded-lg border border-gray-600 space-y-4">
+                    <div className="flex items-center gap-3"><Phone className="text-accent w-6 h-6" /><span className="font-bold text-white">07490738974</span></div>
+                    <div className="flex items-center gap-3"><Mail className="text-accent w-6 h-6" /><span className="text-white">hscbuildersglasgow@gmail.com</span></div>
+                    <div className="flex items-center gap-3"><div className="w-2 h-2 bg-green-500 rounded-full"></div><span className="text-gray-300">WhatsApp available for fast replies</span></div>
+                  </div>
+                </FadeIn>
+                <FadeIn delay={1.0}>
+                  <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300">👉 Get My Free Site Visit & Bonus</button>
+                </FadeIn>
               </div>
-
-              <div className="bg-amber-900/20 border border-amber-700 p-6 rounded-lg">
-                <p className="font-medium text-amber-200 mb-2">
-                  Need urgent help? Our team is active in your area this week.
-                </p>
-                <p className="text-amber-300">
-                  Ask about next-day quotes — limited slots available.
-                </p>
-              </div>
-
-              <button
-                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="w-full bg-[#FF5733] hover:bg-[#e64a2e] text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2"
-              >
-                Get My Free Site Visit & Bonus
-              </button>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -329,5 +235,3 @@ function Fencing() {
     </div>
   );
 }
-
-export default Fencing;

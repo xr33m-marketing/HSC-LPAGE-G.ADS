@@ -1,14 +1,15 @@
 import React from 'react';
 import { Star, Check, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { StickyTopNavBar } from '../components/StickyTopNavBar';
-import { TestimonialsSection } from '../components/ui/TestimonialsSection';
-import { FeatureSteps } from '../components/ui/feature-steps';
-import { defaultFeatureSteps } from '../components/FeatureStepsData';
-import BeforeAfterCarousel from '../components/ui/before-after-carousel';
-import ServiceHero from '../components/ServiceHero';
-import ReferralSection from '../components/ReferralSection';
-import Footer from '../components/Footer';
+import { StickyTopNavBar } from '../../components/StickyTopNavBar';
+import { TestimonialsSection } from '../../components/ui/TestimonialsSection';
+import { FeatureSteps } from '../../components/ui/feature-steps';
+import { defaultFeatureSteps } from '../../components/FeatureStepsData';
+import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
+import ServiceHero from '../../components/ServiceHero';
+import ReferralSection from '../../components/ReferralSection';
+import Footer from '../../components/Footer';
+import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 
 const patioHeadlines = [
   "Cracked Slabs?",

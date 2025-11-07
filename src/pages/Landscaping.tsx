@@ -8,6 +8,7 @@ import BeforeAfterCarousel from '../components/ui/before-after-carousel';
 import ServiceHero from '../components/ServiceHero';
 import ReferralSection from '../components/ReferralSection';
 import Footer from '../components/Footer';
+import { StickyTopNavBar } from '../components/StickyTopNavBar';
 
 const landscapingHeadlines = [
   "Patchy Lawn?",
@@ -87,6 +88,7 @@ function Landscaping() {
 
   return (
     <div className="min-h-screen bg-gray-950 w-full overflow-x-hidden">
+      <StickyTopNavBar />
       <ServiceHero 
         headlines={landscapingHeadlines}
         backgroundImage="https://imgur.com/RJiytpz.jpg"

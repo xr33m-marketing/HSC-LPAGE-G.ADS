@@ -1,14 +1,13 @@
 import React from 'react';
 import { Star, Check, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { StickyTopNavBar } from '../components/StickyTopNavBar';
-import { TestimonialsSection } from '../components/ui/TestimonialsSection';
-import { FeatureSteps } from '../components/ui/feature-steps';
-import { defaultFeatureSteps } from '../components/FeatureStepsData';
-import BeforeAfterCarousel from '../components/ui/before-after-carousel';
-import ServiceHero from '../components/ServiceHero';
-import ReferralSection from '../components/ReferralSection';
-import Footer from '../components/Footer';
+import { TestimonialsSection } from '../../components/ui/TestimonialsSection';
+import { FeatureSteps } from '../../components/ui/feature-steps';
+import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
+import ServiceHero from '../../components/ServiceHero';
+import Footer from '../../components/Footer';
+import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
+import { StickyTopNavBar } from '../../components/StickyTopNavBar';
 
 const turfHeadlines = [
   "Patchy Grass?",
@@ -21,31 +20,16 @@ const turfHeadlines = [
 
 const beforeAfterProjects = [
   {
-    title: "Family Garden Transformation",
-    description: "Premium artificial grass installation with play area",
     beforeImage: "https://imgur.com/ZHY9jPC.jpg",
-    afterImage: "https://imgur.com/9HYYjWw.jpg",
-    category: "Family Garden",
-    location: "Glasgow",
-    duration: "3 days"
+    afterImage: "https://imgur.com/9HYYjWw.jpg"
   },
   {
-    title: "Low Maintenance Garden",
-    description: "Modern artificial lawn with integrated irrigation",
     beforeImage: "https://imgur.com/yGuMKW6.jpg",
-    afterImage: "https://imgur.com/fvM4Fdg.jpg",
-    category: "Modern Garden",
-    location: "Bearsden",
-    duration: "2 days"
+    afterImage: "https://imgur.com/fvM4Fdg.jpg"
   },
   {
-    title: "Sports Surface Installation",
-    description: "Professional-grade artificial turf for sports use",
     beforeImage: "https://imgur.com/4SSmzsw.jpg",
-    afterImage: "https://imgur.com/WxHNpJA.jpg",
-    category: "Sports Surface",
-    location: "Clydebank",
-    duration: "4 days"
+    afterImage: "https://imgur.com/WxHNpJA.jpg"
   }
 ];
 
@@ -53,39 +37,38 @@ export default function ArtificialTurf() {
   const testimonials = [
     {
       author: {
-        name: "David Wilson",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=50&h=50&fit=crop",
-        title: "Verified Customer"
-      },
-      text: "Fantastic job on our artificial lawn. The team was professional and the finish is perfect."
-    },
-    {
-      author: {
-        name: "Sarah Thompson",
+        name: "Lauren McFarlane",
         image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=50&h=50&fit=crop",
         title: "Verified Customer"
       },
-      text: "Very impressed with the quality of work. Our new lawn looks amazing and requires zero maintenance."
+      text: "Highly recommend Hugh and his team. The artificial grass looks amazing and the kids love playing on it all year round."
     },
     {
       author: {
-        name: "Michael Brown",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=50&h=50&fit=crop",
+        name: "Mary Carlyle",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop",
         title: "Verified Customer"
       },
-      text: "Professional service from start to finish. Fair price and excellent workmanship."
+      text: "Efficient service. Great company explained everything and worked timely. The workmanship fantastic, great finish and cleaned up after finished."
+    },
+    {
+      author: {
+        name: "Mary",
+        image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=50&h=50&fit=crop",
+        title: "Verified Customer"
+      },
+      text: "Cant thank Scott and his team enough, from the start to the end true to his word and an excellent finish on the artificial turf installation."
     }
   ];
 
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
-      <ServiceHero 
+      <ServiceHero
         headlines={turfHeadlines}
-        backgroundImage="https://imgur.com/BaFiCLs.jpg"
+        backgroundImage="https://imgur.com/fvM4Fdg.jpg"
         carouselImages={[
-          "https://imgur.com/6B1Wcc8.jpg",
-          "https://imgur.com/nFhGrJy.jpg"
+          "https://imgur.com/fvM4Fdg.jpg"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
@@ -93,103 +76,156 @@ export default function ArtificialTurf() {
         ]}
         offer="No pressure. Just answers, expert ideas, and a plan you'll love."
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
-        thankYouPage="/thank-you-artificial-turf"
+        thankYouPage="/thank-you-driveways"
         service="artificial-turf"
       />
 
-      {/* Pain Points Section */}
-      <section className="py-16 bg-granite-medium">
+      {/* Bridge Into Belief Section */}
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Lawn's Not Getting Better on Its Own</h2>
-          <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
-            <p>Dead patches. Constant mowing. That muddy mess every time it rains.</p>
-            <p>You've looked at it and thought <i>"we really need to fix this"</i> — then let it go another 6 months.</p>
-            <p>Meanwhile, the grass dies. The mud spreads. That weekend fix from last summer didn't last.</p>
-            <p className="font-semibold">Let's fix it once — and do it right.</p>
-          </div>
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+              Tired of That Muddy, Patchy Lawn?
+            </h2>
+          </ScrollReveal>
+          <StaggerContainer className="max-w-4xl mx-auto space-y-6 text-lg text-gray-200">
+            <p>
+              You've tried everything — reseeding, fertilizer, constant watering — but every winter it turns to mud, and every summer it's patchy and brown.
+            </p>
+            <p>
+              The kids can't play outside without tracking dirt through the house. Your dog's turning the garden into a mess. And you're spending weekends mowing instead of relaxing.
+            </p>
+            <p>
+              That's why we built a process that delivers a perfect, maintenance-free lawn — without the hassle.
+            </p>
+            <p>
+              From your first site visit to the final installation, we'll walk you through every step — clear pricing, quick updates, and expert advice so you always know what's happening.
+            </p>
+            <p className="font-semibold text-white text-xl border-l-4 border-accent pl-6 py-2">
+              Here's how we make getting your perfect lawn feel easy — and make sure it looks amazing for years to come.
+            </p>
+          </StaggerContainer>
         </div>
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 bg-granite-light">
+      <section className="py-16 bg-granite-darker">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Built To Last. Designed For You. Done Properly.</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-200 mb-8 text-center">
-              We don't cut corners, use cheap materials, or leave you with drainage problems.
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Premium Artificial Grass. Built To Last. Designed For You.</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
+              We don't use cheap turf or skip the groundwork. Every artificial grass installation is engineered with proper drainage and premium materials that look and feel like real grass.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Full excavation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Drainage solutions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Ground testing</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Premium turf</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Proper edging</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Strong foundation</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">17+ years experience</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Local knowledge</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Planning compliance</span>
-                  </li>
-                </ul>
-              </div>
+          </ScrollReveal>
+
+          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Full excavation</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Drainage solutions</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Weed membrane</span>
+                </li>
+              </ul>
             </div>
-          </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Premium Materials</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Realistic appearance</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">UV resistant</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Pet friendly</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">17+ years experience</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Local knowledge</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Guaranteed workmanship</span>
+                </li>
+              </ul>
+            </div>
+          </StaggerContainer>
+
+          <FadeIn delay={0.8}>
+            <div className="max-w-5xl mx-auto mt-6 text-center">
+              <a
+                href="tel:07490738974"
+                className="inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Phone className="w-6 h-6" />
+                No Harm In Calling
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Gallery Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">Every lawn starts as a problem.</h2>
-          <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-            Too patchy. Too muddy. Too much work. These ones were exactly the same — until we got stuck in.
-          </p>
-          <BeforeAfterCarousel projects={beforeAfterProjects} />
+          <ScrollReveal width="100%">
+            <h2 className="text-4xl font-bold text-center mb-4 text-white">Artificial Grass Transformations</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
+              From muddy mess to perfect green lawn — see the transformation.
+            </p>
+          </ScrollReveal>
+          <FadeIn delay={0.3}>
+            <BeforeAfterCarousel projects={beforeAfterProjects} />
+          </FadeIn>
         </div>
       </section>
 
       {/* Feature Steps Section */}
       <FeatureSteps
-        features={defaultFeatureSteps}
+        features={[
+          {
+            step: "Free On-Site Consultation & Design Plan",
+            content: "We visit your property to assess your lawn area, discuss your requirements, and show turf samples. You'll get a clear quote and plan — no guesswork, no pressure.",
+            image: "/HSC-STEP1-PROCESS copy.webp"
+          },
+          {
+            step: "Expert Ground Preparation & Installation",
+            content: "Once approved, our team handles everything — from excavation and drainage to membrane laying and turf installation. No subcontractors, no shortcuts.",
+            image: "/step2-HSC-PROCESS copy.webp"
+          },
+          {
+            step: "Final Grooming & Inspection",
+            content: "We brush and groom your new lawn to perfection, ensuring it looks natural and is ready for immediate use.",
+            image: "/step3-HSC-PROCESS copy.webp"
+          }
+        ]}
         title="How It Works – A Simple 3-Step Process"
+        subtitle="Our average installation takes 2–4 days, depending on size. You'll always deal directly with our team — start to finish."
         className="bg-granite-light"
       />
 
@@ -201,75 +237,45 @@ export default function ArtificialTurf() {
         className="bg-granite-medium"
       />
 
-      {/* Trust Indicators Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Glasgow Homeowners Trust Us</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Star className="w-12 h-12 text-yellow-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">100+ 5-Star Reviews</h3>
-              <p className="text-gray-300">On Google & Trustpilot</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Clock className="w-12 h-12 text-[#FF5733]" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">17+ Years Experience</h3>
-              <p className="text-gray-300">Serving Glasgow</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">10-Year Guarantee</h3>
-              <p className="text-gray-300">Workmanship Warranty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Referral Section */}
-      <ReferralSection service="lawn" />
-
       {/* Local Map & Trust Badges Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            We're Local. We're Trusted. We're Working Near You.
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Map */}
-            <div className="rounded-lg overflow-hidden shadow-lg google-map">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Property%20Renovators%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk"
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="HSC Builders Location"
-                className="w-full"
-              ></iframe>
-            </div>
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+              We're Local. We're Trusted. We're Working Near You.
+            </h2>
+          </ScrollReveal>
 
-            {/* Trust Badges & Contact */}
-            <div className="space-y-8">
-              <div className="grid gap-4">
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            <ScrollReveal direction="left" delay={0.2}>
+              <div className="rounded-lg overflow-hidden shadow-lg google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Property%20Renovators%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="HSC Builders Location"
+                  className="w-full"
+                ></iframe>
+              </div>
+            </ScrollReveal>
+
+            <ScrollReveal direction="right" delay={0.2}>
+              <div className="space-y-8">
+                <StaggerContainer className="grid gap-4">
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <Star className="text-yellow-400 w-8 h-8" />
                   <div>
-                    <h3 className="font-bold text-white">100+ 5-Star Google Reviews</h3>
+                    <h3 className="font-bold text-white">24 5-Star Google Reviews</h3>
                     <p className="text-gray-300">Trusted by local homeowners</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <MapPin className="text-[#FF5733] w-8 h-8" />
+                  <MapPin className="text-accent w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">Covering All Glasgow Areas</h3>
                     <p className="text-gray-300">Southside, Clydebank, Bearsden, Partick & More</p>
@@ -277,7 +283,7 @@ export default function ArtificialTurf() {
                 </div>
 
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Clock className="text-[#FF5733] w-8 h-8" />
+                  <Clock className="text-accent w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">17+ Years Experience</h3>
                     <p className="text-gray-300">Serving the local community</p>
@@ -285,21 +291,22 @@ export default function ArtificialTurf() {
                 </div>
 
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Shield className="text-[#FF5733] w-8 h-8" />
+                  <Shield className="text-accent w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">Licensed & Insured</h3>
                     <p className="text-gray-300">Fully vetted, professional crew</p>
                   </div>
                 </div>
-              </div>
+                </StaggerContainer>
 
-              <div className="bg-granite-light p-6 rounded-lg shadow-sm space-y-4 border border-gray-600">
+              <FadeIn delay={0.6}>
+                <div className="bg-granite-light p-6 rounded-lg shadow-sm space-y-4 border border-gray-600">
                 <div className="flex items-center gap-3">
-                  <Phone className="text-[#FF5733] w-6 h-6" />
+                  <Phone className="text-accent w-6 h-6" />
                   <span className="font-bold text-white">07490738974</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail className="text-[#FF5733] w-6 h-6" />
+                  <Mail className="text-accent w-6 h-6" />
                   <span className="text-white">hscbuildersglasgow@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
@@ -307,23 +314,29 @@ export default function ArtificialTurf() {
                   <span className="text-gray-300">WhatsApp available for fast replies</span>
                 </div>
               </div>
+              </FadeIn>
 
-              <div className="bg-amber-900/20 border border-amber-700 p-6 rounded-lg">
-                <p className="font-medium text-amber-200 mb-2">
-                  Need urgent help? Our team is active in your area this week.
-                </p>
-                <p className="text-amber-300">
-                  Ask about next-day quotes — limited slots available.
-                </p>
-              </div>
+              <FadeIn delay={0.8}>
+                <div className="bg-amber-900/20 border border-amber-700 p-6 rounded-lg">
+                  <p className="font-medium text-amber-200 mb-2">
+                    Need urgent help? Our team is active in your area this week.
+                  </p>
+                  <p className="text-amber-300">
+                    Ask about next-day quotes — limited slots available.
+                  </p>
+                </div>
+              </FadeIn>
 
-              <button
+              <FadeIn delay={1.0}>
+                <button
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="w-full bg-[#FF5733] hover:bg-[#e64a2e] text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2"
+                className="w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2"
               >
                 👉 Get My Free Site Visit & Bonus
               </button>
-            </div>
+              </FadeIn>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
