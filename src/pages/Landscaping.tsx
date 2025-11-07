@@ -3,11 +3,10 @@ import { Star, Check, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { TestimonialsSection } from '../components/ui/TestimonialsSection';
 import { FeatureSteps } from '../components/ui/feature-steps';
-import { defaultFeatureSteps } from '../components/FeatureStepsData';
 import BeforeAfterCarousel from '../components/ui/before-after-carousel';
 import ServiceHero from '../components/ServiceHero';
-import ReferralSection from '../components/ReferralSection';
 import Footer from '../components/Footer';
+import { ScrollReveal, StaggerContainer, FadeIn } from '../components/ScrollReveal';
 import { StickyTopNavBar } from '../components/StickyTopNavBar';
 
 const landscapingHeadlines = [
@@ -21,44 +20,24 @@ const landscapingHeadlines = [
 
 const beforeAfterProjects = [
   {
-    title: "Modern Garden Transformation",
-    description: "Complete garden makeover with new patio, artificial grass, and raised beds",
     beforeImage: "https://imgur.com/ZHY9jPC.jpg",
-    afterImage: "https://imgur.com/9HYYjWw.jpg",
-    category: "Full Garden Makeover",
-    location: "Glasgow",
-    duration: "2 weeks"
+    afterImage: "https://imgur.com/9HYYjWw.jpg"
   },
   {
-    title: "Family Garden Redesign",
-    description: "Child-friendly garden with play area and low-maintenance features",
     beforeImage: "https://imgur.com/Heep3zw.jpg",
-    afterImage: "https://imgur.com/j8r7kko.jpg",
-    category: "Family Garden",
-    location: "Bearsden",
-    duration: "10 days"
+    afterImage: "https://imgur.com/j8r7kko.jpg"
   },
   {
-    title: "Contemporary Garden Design",
-    description: "Modern landscaping with integrated lighting and water features",
     beforeImage: "https://imgur.com/6C1fio4.jpg",
-    afterImage: "https://imgur.com/MSYwxqn.jpg",
-    category: "Modern Design",
-    location: "Clydebank",
-    duration: "2 weeks"
+    afterImage: "https://imgur.com/MSYwxqn.jpg"
   },
   {
-    title: "Low Maintenance Garden",
-    description: "Beautiful yet practical design with artificial grass and raised planters",
     beforeImage: "https://imgur.com/yGuMKW6.jpg",
-    afterImage: "https://imgur.com/fvM4Fdg.jpg",
-    category: "Low Maintenance",
-    location: "Partick",
-    duration: "1 week"
+    afterImage: "https://imgur.com/fvM4Fdg.jpg"
   }
 ];
 
-function Landscaping() {
+export default function Landscaping() {
   const testimonials = [
     {
       author: {
@@ -89,7 +68,7 @@ function Landscaping() {
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
-      <ServiceHero 
+      <ServiceHero
         headlines={landscapingHeadlines}
         backgroundImage="https://imgur.com/RJiytpz.jpg"
         carouselImages={[
@@ -102,412 +81,270 @@ function Landscaping() {
         ]}
         offer="No pressure. Just answers, expert ideas, and a plan you'll love."
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
-        thankYouPage="/thank-you-landscaping"
+        thankYouPage="/thank-you-driveways"
         service="landscaping"
       />
 
-      {/* Pain Points Section */}
+      {/* Bridge Into Belief Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Garden's Not Getting Better on Its Own</h2>
-          <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
-            <p>Cracked paving. Standing water. That patchy corner where grass refuses to grow.</p>
-            <p>You've looked out the window and thought <i>"we really need to do something"</i> — then let it go another 6 months.</p>
-            <p>Meanwhile, the mud spreads. The drainage gets worse. That cheap "fix" from 3 years ago is crumbling.</p>
-            <p className="font-semibold">Let's fix it once — and do it right.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Professional Landscaping Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Professional Landscaping Services in Glasgow</h2>
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <p className="text-lg text-gray-200 mb-6">
-              As one of Glasgow's leading landscaping companies, we specialize in transforming outdoor spaces across the city. 
-              Our expert landscapers in Glasgow have been creating stunning gardens for over 17 years.
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+              So… What's Really Holding You Back?
+            </h2>
+          </ScrollReveal>
+          <StaggerContainer className="max-w-4xl mx-auto space-y-6 text-lg text-gray-200">
+            <p>
+              You've thought about sorting your garden more than once — maybe even looked at quotes — but something's always stopped you.
             </p>
-            <p className="text-lg text-gray-200">
-              From complete garden makeovers to specialized landscaping projects, our team delivers exceptional results 
-              that enhance your property's value and your quality of life.
+            <p>
+              Maybe it's the cost. Maybe it's worrying the job won't go smoothly, or that you'll end up chasing contractors.
             </p>
-          </div>
+            <p>
+              That's why we built a process that's simple, collaborative, and completely pressure-free.
+            </p>
+            <p>
+              From your first site visit to the final walk-through, we'll guide you through every step — clear pricing, quick updates, and expert advice so you always know what's happening.
+            </p>
+            <p className="font-semibold text-white text-xl border-l-4 border-accent pl-6 py-2">
+              Here's how we make getting your landscaping done feel easy — and make sure the result lasts for years to come.
+            </p>
+          </StaggerContainer>
         </div>
       </section>
 
       {/* Solution Section */}
       <section className="py-16 bg-granite-darker">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Expert Landscaping Built To Last. Designed For You. Done Properly.</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-200 mb-8 text-center">
-              We don't cut corners, use flimsy materials, or vanish halfway through the job. Our landscaping approach 
-              ensures every project meets the highest standards expected from professional landscapers in Glasgow.
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Built To Last. Designed For You. Done Properly.</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
+              We don't cut corners, use cheap materials, or leave you with drainage problems. Every landscaping project is designed to enhance your outdoor space and backed by our commitment to quality.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Expert leveling</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Drainage solutions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Ground testing</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Premium products</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Weather resistant</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Long-lasting finish</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">17+ years experience</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Local knowledge</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Council compliance</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </ScrollReveal>
 
-      {/* Why Choose Our Landscaping Company Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Why Choose Our Landscaping Company in Glasgow?</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-                <h3 className="text-xl font-bold mb-4 text-white">Comprehensive Landscaping Services</h3>
-                <p className="text-gray-200 mb-4">
-                  Our landscaping expertise covers everything from garden design and installation to ongoing maintenance. 
-                  We're not just landscapers in Glasgow – we're your complete outdoor transformation partners.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Garden Design & Planning</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Patio & Decking Installation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Artificial Grass & Turfing</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-                <h3 className="text-xl font-bold mb-4 text-white">Local Glasgow Landscaping Experts</h3>
-                <p className="text-gray-200 mb-4">
-                  As established landscaping companies go, we understand Glasgow's unique climate and soil conditions. 
-                  Our local knowledge ensures your landscaping project thrives in Scotland's weather.
-                </p>
-                <ul className="space-y-2">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Climate-Appropriate Plant Selection</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Drainage Solutions for Scottish Weather</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Local Council Compliance</span>
-                  </li>
-                </ul>
-              </div>
+          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Expert leveling</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Drainage solutions</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Ground testing</span>
+                </li>
+              </ul>
             </div>
-          </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Premium products</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Weather resistant</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Long-lasting finish</span>
+                </li>
+              </ul>
+            </div>
+            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
+              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">17+ years experience</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Local knowledge</span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <Check className="text-green-400" size={20} />
+                  <span className="text-gray-200">Council compliance</span>
+                </li>
+              </ul>
+            </div>
+          </StaggerContainer>
+
+          {/* Call Button */}
+          <FadeIn delay={0.8}>
+            <div className="max-w-5xl mx-auto mt-6 text-center">
+              <a
+                href="tel:07490738974"
+                className="inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Phone className="w-6 h-6" />
+                No Harm In Calling
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
       {/* Gallery Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">Professional Landscaping Transformations</h2>
-          <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-            Every garden starts as a mess. Too small. Too wet. Too forgotten. These landscaping projects were exactly the same — until our expert landscapers in Glasgow got stuck in.
-          </p>
-          <BeforeAfterCarousel projects={beforeAfterProjects} />
+          <ScrollReveal width="100%">
+            <h2 className="text-4xl font-bold text-center mb-4 text-white">What's Possible With HSC Builders</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
+              From overgrown and neglected to stunning outdoor spaces built for years of enjoyment.
+            </p>
+          </ScrollReveal>
+          <FadeIn delay={0.3}>
+            <BeforeAfterCarousel projects={beforeAfterProjects} />
+          </FadeIn>
         </div>
       </section>
 
       {/* Feature Steps Section */}
       <FeatureSteps
-        features={defaultFeatureSteps}
-        title="How Our Landscaping Process Works – A Simple 3-Step Process"
+        features={[
+          {
+            step: "Free On-Site Consultation & Design Plan",
+            content: "We visit your property to assess your outdoor space, discuss your vision, and show design and material options. You'll get a clear quote and plan — no guesswork, no pressure.",
+            image: "/HSC-STEP1-PROCESS copy.webp"
+          },
+          {
+            step: "Expert Planning & Installation",
+            content: "Once approved, our in-house team handles everything — from site preparation and drainage to planting and finishing touches. No subcontractors, no cut corners, just a clean, efficient project done right the first time.",
+            image: "/step2-HSC-PROCESS copy.webp"
+          },
+          {
+            step: "Final Inspection & Hand-Off",
+            content: "We don't just finish the job — we perfect it. Every project gets a final inspection and cleanup to ensure everything looks amazing and is ready for you to enjoy.",
+            image: "/step3-HSC-PROCESS copy.webp"
+          }
+        ]}
+        title="How It Works – A Simple 3-Step Process"
+        subtitle="Our average landscaping project takes 1–2 weeks, depending on scope. You'll always deal directly with our team — start to finish."
         className="bg-granite-light"
       />
 
       {/* Reviews Section */}
       <TestimonialsSection
-        title="What Our Landscaping Customers Say"
-        description="Read trusted reviews from our satisfied landscaping clients across Glasgow"
+        title="What Our Customers Say"
+        description="Read trusted reviews from our satisfied customers"
         testimonials={testimonials}
         className="bg-granite-medium"
       />
 
-      {/* Trust Indicators Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Glasgow Homeowners Choose Our Landscaping Services</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Star className="w-12 h-12 text-yellow-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">5-Star Landscaping Reviews</h3>
-              <p className="text-gray-300">Top-rated landscapers in Glasgow on Google</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Clock className="w-12 h-12 text-[#FF5733]" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">17+ Years Landscaping Experience</h3>
-              <p className="text-gray-300">Serving Glasgow with expert landscaping</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">12-Month Landscaping Guarantee</h3>
-              <p className="text-gray-300">Comprehensive Workmanship Warranty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Offer Bundles Section */}
-      <section className="py-16 bg-granite-medium">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Complete Landscaping Packages - Save More with Service Bundles</h2>
-          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-            As one of Glasgow's premier landscaping companies, we offer comprehensive packages that combine multiple services for bigger savings and a complete transformation. Popular landscaping bundles include:
-          </p>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
-              <div className="relative h-48">
-                <img 
-                  src="https://i.imgur.com/leqwhwc.jpg"
-                  alt="Complete Landscaping & Patio Bundle"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full">
-                  Save 20%
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">Complete Landscaping & Patio Bundle</h3>
-                <p className="text-gray-300 mb-6">Full outdoor living space transformation with professional landscaping and premium patio installation.</p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Full Landscaping Design</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Premium Patio Installation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Premium Paving With Weed-Resistant Joints</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
-              <div className="relative h-48">
-                <img 
-                  src="https://i.imgur.com/Orv62sB.jpg"
-                  alt="Landscaping & Fencing Package"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full">
-                  Save 15%
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">Landscaping & Fencing Package</h3>
-                <p className="text-gray-300 mb-6">Professional landscaping with premium fencing for complete garden privacy and beauty.</p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Quality Fencing Installation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Old Fence Removal & Site Prep Included</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Low-Maintenance Gravel Boards Installed</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
-              <div className="relative h-48">
-                <img 
-                  src="https://imgur.com/fvM4Fdg.jpg"
-                  alt="Low Maintenance Landscaping Bundle"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full">
-                  Save 15%
-                </div>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-3 text-white">Low Maintenance Landscaping Bundle</h3>
-                <p className="text-gray-300 mb-6">Perfect landscaping solution for busy homeowners who want a beautiful, easy-care garden.</p>
-                <ul className="space-y-3 mb-6">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Artificial Grass Installation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Low-Maintenance Plants</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={18} />
-                    <span className="text-gray-200">Weed-Proof Membrane & Sub-Base Prep</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Referral Section */}
-      <ReferralSection service="landscaping project" />
-
       {/* Local Map & Trust Badges Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
-            Local Glasgow Landscapers. Trusted. Working Near You.
-          </h2>
-          
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+              We're Local. We're Trusted. We're Working Near You.
+            </h2>
+          </ScrollReveal>
+
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Map */}
-            <div className="rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk"
-                width="100%" 
-                height="400" 
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <ScrollReveal direction="left" delay={0.2}>
+              <div className="rounded-lg overflow-hidden shadow-lg google-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2242.3191637325403!2d-4.1035873999999986!3d55.805059299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8b50b938909fffb5%3A0x9295392d88e539!2sHSC%20Builders%20%7C%20Landscape%20Gardeners%20%7C%20Property%20Renovators%20%7C%20Glasgow!5e0!3m2!1sen!2suk!4v1745001551346!5m2!1sen!2suk"
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="HSC Builders Location"
+                  className="w-full"
+                ></iframe>
+              </div>
+            </ScrollReveal>
 
-            {/* Trust Badges */}
-            <div>
-              <div className="grid gap-4">
+            {/* Trust Badges & Contact */}
+            <ScrollReveal direction="right" delay={0.2}>
+              <div className="space-y-8">
+                <StaggerContainer className="grid gap-4">
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <Star className="text-yellow-400 w-8 h-8" />
                   <div>
-                    <h3 className="font-bold text-white">5-Star Landscaping Reviews</h3>
-                    <p className="text-gray-300">Top-rated landscaping company on Google</p>
+                    <h3 className="font-bold text-white">24 5-Star Google Reviews</h3>
+                    <p className="text-gray-300">Trusted by local homeowners</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <MapPin className="text-[#FF5733] w-8 h-8" />
+                  <MapPin className="text-accent w-8 h-8" />
                   <div>
-                    <h3 className="font-bold text-white">Landscaping All Glasgow Areas</h3>
+                    <h3 className="font-bold text-white">Covering All Glasgow Areas</h3>
                     <p className="text-gray-300">Southside, Clydebank, Bearsden, Partick & More</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Clock className="text-[#FF5733] w-8 h-8" />
+                  <Clock className="text-accent w-8 h-8" />
                   <div>
-                    <h3 className="font-bold text-white">17+ Years Landscaping Experience</h3>
-                    <p className="text-gray-300">Established landscapers serving the local community</p>
+                    <h3 className="font-bold text-white">17+ Years Experience</h3>
+                    <p className="text-gray-300">Serving the local community</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
-                  <Shield className="text-[#FF5733] w-8 h-8" />
+                  <Shield className="text-accent w-8 h-8" />
                   <div>
-                    <h3 className="font-bold text-white">Licensed & Insured Landscaping</h3>
-                    <p className="text-gray-300">Fully vetted, professional landscaping crew</p>
+                    <h3 className="font-bold text-white">Licensed & Insured</h3>
+                    <p className="text-gray-300">Fully vetted, professional crew</p>
                   </div>
                 </div>
-              </div>
+                </StaggerContainer>
 
-              <div className="mt-8 bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
-                <div className="space-y-4">
-                  <div className="flex items-center gap-3">
-                    <Phone className="text-[#FF5733] w-6 h-6" />
-                    <span className="font-bold text-white">07490738974</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail className="text-[#FF5733] w-6 h-6" />
-                    <span className="text-white">hscbuildersglasgow@gmail.com</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-gray-300">WhatsApp available for fast landscaping quotes</span>
-                  </div>
+              <FadeIn delay={0.6}>
+                <div className="bg-granite-light p-6 rounded-lg shadow-sm space-y-4 border border-gray-600">
+                <div className="flex items-center gap-3">
+                  <Phone className="text-accent w-6 h-6" />
+                  <span className="font-bold text-white">07490738974</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Mail className="text-accent w-6 h-6" />
+                  <span className="text-white">hscbuildersglasgow@gmail.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-2 bg-green-500 rounded-full"></div>
+                  <span className="text-gray-300">WhatsApp available for fast replies</span>
                 </div>
               </div>
+              </FadeIn>
 
-              <div className="mt-6 bg-amber-900/20 border border-amber-700 p-6 rounded-lg">
-                <p className="font-medium text-amber-200 mb-2">
-                  Need urgent landscaping help? Our team is active in your area this week.
-                </p>
-                <p className="text-amber-300">
-                  Ask about next-day landscaping quotes — limited slots available.
-                </p>
-              </div>
+              <FadeIn delay={0.8}>
+                <div className="bg-amber-900/20 border border-amber-700 p-6 rounded-lg">
+                  <p className="font-medium text-amber-200 mb-2">
+                    Need urgent help? Our team is active in your area this week.
+                  </p>
+                  <p className="text-amber-300">
+                    Ask about next-day quotes — limited slots available.
+                  </p>
+                </div>
+              </FadeIn>
 
-              <button
+              <FadeIn delay={1.0}>
+                <button
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                className="w-full mt-6 bg-[#FF5733] hover:bg-[#e64a2e] text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2"
+                className="w-full bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 flex items-center justify-center gap-2"
               >
-                👉 Get My Free Landscaping Site Visit & Bonus
+                👉 Get My Free Site Visit & Bonus
               </button>
-            </div>
+              </FadeIn>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -516,5 +353,3 @@ function Landscaping() {
     </div>
   );
 }
-
-export default Landscaping;
