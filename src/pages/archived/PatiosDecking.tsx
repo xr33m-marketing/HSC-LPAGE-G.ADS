@@ -108,7 +108,7 @@ export default function PatiosDecking() {
       />
 
       {/* Pain Points Section */}
-      <section className="py-16 bg-granite-medium">
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Patio's Not Getting Better on Its Own</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
@@ -121,7 +121,7 @@ export default function PatiosDecking() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 bg-granite-light">
+      <section className="py-16 bg-granite-darker">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Built To Last. Designed For You. Done Properly.</h2>
           <div className="max-w-3xl mx-auto">

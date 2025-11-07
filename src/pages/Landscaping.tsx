@@ -87,7 +87,7 @@ function Landscaping() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-950 w-full overflow-x-hidden">
+    <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
       <ServiceHero 
         headlines={landscapingHeadlines}
@@ -107,7 +107,7 @@ function Landscaping() {
       />
 
       {/* Pain Points Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Garden's Not Getting Better on Its Own</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
@@ -120,7 +120,7 @@ function Landscaping() {
       </section>
 
       {/* Professional Landscaping Section */}
-      <section className="py-16 bg-gray-800">
+      <section className="py-16 bg-granite-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Professional Landscaping Services in Glasgow</h2>
           <div className="max-w-3xl mx-auto text-center mb-12">
@@ -137,7 +137,7 @@ function Landscaping() {
       </section>
 
       {/* Solution Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-granite-darker">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Expert Landscaping Built To Last. Designed For You. Done Properly.</h2>
           <div className="max-w-3xl mx-auto">
@@ -146,7 +146,7 @@ function Landscaping() {
               ensures every project meets the highest standards expected from professional landscapers in Glasgow.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700">
+              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
                 <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
@@ -163,7 +163,7 @@ function Landscaping() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700">
+              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
                 <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
@@ -180,7 +180,7 @@ function Landscaping() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700">
+              <div className="bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
                 <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
                 <ul className="space-y-3">
                   <li className="flex items-center gap-2">
@@ -203,12 +203,12 @@ function Landscaping() {
       </section>
 
       {/* Why Choose Our Landscaping Company Section */}
-      <section className="py-16 bg-gray-800">
+      <section className="py-16 bg-granite-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Why Choose Our Landscaping Company in Glasgow?</h2>
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
+              <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
                 <h3 className="text-xl font-bold mb-4 text-white">Comprehensive Landscaping Services</h3>
                 <p className="text-gray-200 mb-4">
                   Our landscaping expertise covers everything from garden design and installation to ongoing maintenance. 
@@ -229,7 +229,7 @@ function Landscaping() {
                   </li>
                 </ul>
               </div>
-              <div className="bg-gray-900 p-6 rounded-lg border border-gray-700">
+              <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
                 <h3 className="text-xl font-bold mb-4 text-white">Local Glasgow Landscaping Experts</h3>
                 <p className="text-gray-200 mb-4">
                   As established landscaping companies go, we understand Glasgow's unique climate and soil conditions. 
@@ -256,7 +256,7 @@ function Landscaping() {
       </section>
 
       {/* Gallery Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-4 text-white">Professional Landscaping Transformations</h2>
           <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
@@ -270,7 +270,7 @@ function Landscaping() {
       <FeatureSteps
         features={defaultFeatureSteps}
         title="How Our Landscaping Process Works – A Simple 3-Step Process"
-        className="bg-gray-800"
+        className="bg-granite-light"
       />
 
       {/* Reviews Section */}
@@ -278,11 +278,11 @@ function Landscaping() {
         title="What Our Landscaping Customers Say"
         description="Read trusted reviews from our satisfied landscaping clients across Glasgow"
         testimonials={testimonials}
-        className="bg-gray-900"
+        className="bg-granite-medium"
       />
 
       {/* Trust Indicators Section */}
-      <section className="py-16 bg-gray-800">
+      <section className="py-16 bg-granite-light">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Glasgow Homeowners Choose Our Landscaping Services</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
@@ -312,14 +312,14 @@ function Landscaping() {
       </section>
 
       {/* Offer Bundles Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Complete Landscaping Packages - Save More with Service Bundles</h2>
           <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
             As one of Glasgow's premier landscaping companies, we offer comprehensive packages that combine multiple services for bigger savings and a complete transformation. Popular landscaping bundles include:
           </p>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-700">
+            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
               <div className="relative h-48">
                 <img 
                   src="https://i.imgur.com/leqwhwc.jpg"
@@ -350,7 +350,7 @@ function Landscaping() {
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-700">
+            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
               <div className="relative h-48">
                 <img 
                   src="https://i.imgur.com/Orv62sB.jpg"
@@ -381,7 +381,7 @@ function Landscaping() {
               </div>
             </div>
 
-            <div className="bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-700">
+            <div className="bg-granite-light rounded-xl shadow-lg overflow-hidden border border-gray-600">
               <div className="relative h-48">
                 <img 
                   src="https://imgur.com/fvM4Fdg.jpg"
@@ -419,7 +419,7 @@ function Landscaping() {
       <ReferralSection service="landscaping project" />
 
       {/* Local Map & Trust Badges Section */}
-      <section className="py-16 bg-gray-900">
+      <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
             Local Glasgow Landscapers. Trusted. Working Near You.
@@ -442,7 +442,7 @@ function Landscaping() {
             {/* Trust Badges */}
             <div>
               <div className="grid gap-4">
-                <div className="flex items-center gap-3 bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-700">
+                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <Star className="text-yellow-400 w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">5-Star Landscaping Reviews</h3>
@@ -450,7 +450,7 @@ function Landscaping() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-700">
+                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <MapPin className="text-[#FF5733] w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">Landscaping All Glasgow Areas</h3>
@@ -458,7 +458,7 @@ function Landscaping() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-700">
+                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <Clock className="text-[#FF5733] w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">17+ Years Landscaping Experience</h3>
@@ -466,7 +466,7 @@ function Landscaping() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 bg-gray-800 p-4 rounded-lg shadow-sm border border-gray-700">
+                <div className="flex items-center gap-3 bg-granite-light p-4 rounded-lg shadow-sm border border-gray-600">
                   <Shield className="text-[#FF5733] w-8 h-8" />
                   <div>
                     <h3 className="font-bold text-white">Licensed & Insured Landscaping</h3>
@@ -475,7 +475,7 @@ function Landscaping() {
                 </div>
               </div>
 
-              <div className="mt-8 bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-700">
+              <div className="mt-8 bg-granite-light p-6 rounded-lg shadow-sm border border-gray-600">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Phone className="text-[#FF5733] w-6 h-6" />
