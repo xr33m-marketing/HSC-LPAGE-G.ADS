@@ -107,7 +107,7 @@ export default function ServiceHero({
 
   return (
     <>
-      <div className="relative bg-granite overflow-x-hidden overflow-y-auto min-h-screen w-full">
+      <div className="relative bg-granite overflow-x-hidden overflow-y-auto min-h-screen w-full pt-16">
         {/* Hero Background Image */}
         <img
           src={backgroundImage}
