@@ -52,12 +52,11 @@ export function StickyTopNavBar() {
   }, []);
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-[9999] transition-all duration-300",
-        isScrolled ? "bg-granite-dark/95 shadow-md backdrop-blur-md" : "bg-granite-dark/70 backdrop-blur-sm"
+        isScrolled ? "bg-granite-dark/95 shadow-lg backdrop-blur-md" : "bg-granite-dark/90 backdrop-blur-sm"
       )}
-      style={{ position: 'fixed', width: '100%' }}
     >
       <div className="flex justify-center py-2">
         <div className="flex gap-2 px-4 py-1 rounded-full overflow-x-auto max-w-full no-scrollbar">
