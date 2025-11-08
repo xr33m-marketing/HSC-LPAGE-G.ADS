@@ -40,13 +40,11 @@ const beforeAfterProjects = [
 ];
 
 const recentProjects = [
-  { image: '', alt: 'Landscaping Project 1' },
-  { image: '', alt: 'Landscaping Project 2' },
-  { image: '', alt: 'Landscaping Project 3' },
-  { image: '', alt: 'Landscaping Project 4' },
-  { image: '', alt: 'Landscaping Project 5' },
-  { image: '', alt: 'Landscaping Project 6' },
-  { image: '', alt: 'Landscaping Project 7' }
+  { image: '/hsc-landscaping-after-transformation.webp', alt: 'Landscaping Transformation Glasgow' },
+  { image: '/HSC-Full-transformation-Gallery.webp', alt: 'Complete Garden Transformation' },
+  { image: '/HSC-d-way-GAllery-after.webp', alt: 'Driveway and Landscaping Project' },
+  { image: '/HSC-FULL-Transformation.webp', alt: 'Full Property Landscaping' },
+  { image: '/HSC-Gallery-Full-TRansformation (1).webp', alt: 'Gallery Full Transformation' }
 ];
 
 export default function Landscaping() {
