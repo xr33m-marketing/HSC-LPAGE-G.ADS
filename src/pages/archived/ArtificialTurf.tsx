@@ -80,6 +80,28 @@ export default function ArtificialTurf() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-driveways"
         service="artificial-turf"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "Premium Turf Options",
+            description: "Multiple grades and pile heights to suit your needs and budget."
+          },
+          {
+            title: "Proper Installation",
+            description: "Professional base preparation and drainage for lasting quality."
+          },
+          {
+            title: "Pet & Child Friendly",
+            description: "Safe, durable surfaces that look great year-round."
+          },
+          {
+            title: "Free On-Site Assessment",
+            description: "Get clear pricing and turf samples before spending a penny."
+          }
+        ]}
       />
 
       {/* Bridge Into Belief Section */}

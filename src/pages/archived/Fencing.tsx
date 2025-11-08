@@ -79,6 +79,28 @@ export default function Fencing() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-driveways"
         service="fencing"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "All Types of Fencing",
+            description: "From panel replacement to full perimeter installations and repairs."
+          },
+          {
+            title: "Storm Damage Specialists",
+            description: "Quick response to emergency repairs and wind damage."
+          },
+          {
+            title: "Concrete Footings",
+            description: "Proper groundwork ensures your fence stands firm for years."
+          },
+          {
+            title: "Free On-Site Assessment",
+            description: "Get clear pricing and panel options before spending a penny."
+          }
+        ]}
       />
 
       <section className="py-16 bg-primary">

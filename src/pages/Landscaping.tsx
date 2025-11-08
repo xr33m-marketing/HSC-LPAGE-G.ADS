@@ -110,6 +110,28 @@ export default function Landscaping() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-driveways"
         service="landscaping"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "Full Garden Transformations",
+            description: "From concept to completion, we handle every aspect of your landscaping project."
+          },
+          {
+            title: "Expert Design",
+            description: "Professional garden design tailored to your space and lifestyle."
+          },
+          {
+            title: "Quality Materials",
+            description: "Premium plants, turf, and hardscaping materials for lasting results."
+          },
+          {
+            title: "Free On-Site Consultation",
+            description: "Get clear pricing and design ideas before spending a penny."
+          }
+        ]}
       />
 
       {/* Bridge Into Belief Section */}

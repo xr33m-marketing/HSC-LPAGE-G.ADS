@@ -19,9 +19,36 @@ interface ServiceHeroProps {
   addOnBonus?: string;
   thankYouPage: string;
   service: string;
+  serviceFeatures?: Array<{
+    title: string;
+    description: string;
+  }>;
 }
 
 const DEFAULT_DESCRIPTION = "You've either put it off, or tried to sort it yourself — but here we are, and your garden still isn't right.";
+
+const DEFAULT_SERVICE_FEATURES = [
+  {
+    title: "Fast Replies",
+    description: "We'll get back to you within 24 hours, guaranteed."
+  },
+  {
+    title: "All Types of Driveways",
+    description: "From block paving to monoblock paths & full driveway rebuilds."
+  },
+  {
+    title: "Expert Advice",
+    description: "Honest recommendations from tradesmen, not salesmen."
+  },
+  {
+    title: "Smooth Process",
+    description: "From first quote to finished job, everything handled start to finish."
+  },
+  {
+    title: "Free On-Site Assessment",
+    description: "Get clear pricing and design ideas before spending a penny."
+  }
+];
 
 export default function ServiceHero({
   headlines,
@@ -32,7 +59,8 @@ export default function ServiceHero({
   offer,
   addOnBonus,
   thankYouPage,
-  service
+  service,
+  serviceFeatures = DEFAULT_SERVICE_FEATURES
 }: ServiceHeroProps) {
   const navigate = useNavigate();
   const { setService } = useNotificationStore();
@@ -225,41 +253,15 @@ export default function ServiceHero({
                 </p>
 
                 <StaggerContainer className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <Check className="text-accent mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <span className="font-semibold text-white">Fast Replies</span>
-                    <span className="text-gray-300"> — We'll get back to you within 24 hours, guaranteed.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-accent mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <span className="font-semibold text-white">All Types of Driveways</span>
-                    <span className="text-gray-300"> — From block paving to monoblock paths & full driveway rebuilds.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-accent mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <span className="font-semibold text-white">Expert Advice</span>
-                    <span className="text-gray-300"> — Honest recommendations from tradesmen, not salesmen.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-accent mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <span className="font-semibold text-white">Smooth Process</span>
-                    <span className="text-gray-300"> — From first quote to finished job, everything handled start to finish.</span>
-                  </div>
-                </li>
-                <li className="flex items-start gap-3">
-                  <Check className="text-accent mt-1 flex-shrink-0" size={24} />
-                  <div>
-                    <span className="font-semibold text-white">Free On-Site Assessment</span>
-                    <span className="text-gray-300"> — Get clear pricing and design ideas before spending a penny.</span>
-                  </div>
-                </li>
+                {serviceFeatures.map((feature, index) => (
+                  <li key={index} className="flex items-start gap-3">
+                    <Check className="text-accent mt-1 flex-shrink-0" size={24} />
+                    <div>
+                      <span className="font-semibold text-white">{feature.title}</span>
+                      <span className="text-gray-300"> — {feature.description}</span>
+                    </div>
+                  </li>
+                ))}
                 </StaggerContainer>
 
                 <p className="text-gray-300 italic border-l-4 border-accent pl-4 py-2">

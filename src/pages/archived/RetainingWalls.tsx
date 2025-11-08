@@ -101,7 +101,7 @@ export default function RetainingWalls() {
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
-      <ServiceHero 
+      <ServiceHero
         headlines={wallHeadlines}
         backgroundImage="https://imgur.com/N1I2w82.jpg"
         carouselImages={[
@@ -116,6 +116,28 @@ export default function RetainingWalls() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-retaining-walls"
         service="retaining-walls"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "Structural Expertise",
+            description: "Engineered solutions for slopes, terracing, and level changes."
+          },
+          {
+            title: "Multiple Materials",
+            description: "Brick, block, stone, or sleeper walls to suit your design."
+          },
+          {
+            title: "Drainage Solutions",
+            description: "Proper drainage and reinforcement for long-term stability."
+          },
+          {
+            title: "Free On-Site Assessment",
+            description: "Get clear pricing and design options before spending a penny."
+          }
+        ]}
       />
 
       {/* Pain Points Section */}

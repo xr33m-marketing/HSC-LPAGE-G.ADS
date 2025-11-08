@@ -118,6 +118,28 @@ export default function PatiosDecking() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-patios-decking"
         service="patios-decking"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "Patio & Decking Specialists",
+            description: "From natural stone patios to composite decking installations."
+          },
+          {
+            title: "Design Expertise",
+            description: "Create the perfect outdoor entertaining space for your home."
+          },
+          {
+            title: "Quality Materials",
+            description: "Premium paving, decking boards, and finishing touches."
+          },
+          {
+            title: "Free On-Site Assessment",
+            description: "Get clear pricing and material options before spending a penny."
+          }
+        ]}
       />
 
       {/* Pain Points Section */}

@@ -100,6 +100,28 @@ export default function Driveways() {
         addOnBonus="🔒 Limited Time Offer - Next 30 Days Only"
         thankYouPage="/thank-you-driveways"
         service="driveways"
+        serviceFeatures={[
+          {
+            title: "Fast Replies",
+            description: "We'll get back to you within 24 hours, guaranteed."
+          },
+          {
+            title: "All Types of Driveways",
+            description: "From block paving to monoblock paths & full driveway rebuilds."
+          },
+          {
+            title: "Expert Advice",
+            description: "Honest recommendations from tradesmen, not salesmen."
+          },
+          {
+            title: "Smooth Process",
+            description: "From first quote to finished job, everything handled start to finish."
+          },
+          {
+            title: "Free On-Site Assessment",
+            description: "Get clear pricing and design ideas before spending a penny."
+          }
+        ]}
       />
 
       {/* Bridge Into Belief Section */}
