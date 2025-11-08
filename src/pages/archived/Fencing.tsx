@@ -29,6 +29,14 @@ const beforeAfterProjects = [
   {
     beforeImage: "/fencing-BEFORE-HSC-Gallery (1).webp",
     afterImage: "/Compostite-fencing-HSC-home (1).webp"
+  },
+  {
+    beforeImage: "/Gallery-Before-HSC-fencing (1) copy.webp",
+    afterImage: "/fencing-home-projects-HSC.webp"
+  },
+  {
+    beforeImage: "/fencing-before-HSC-GAllery.webp",
+    afterImage: "/fencing-HSC-SERVICES-Landscaping.png"
   }
 ];
 
