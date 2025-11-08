@@ -189,23 +189,6 @@ export default function Landscaping() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-granite-medium">
-        <div className="container mx-auto px-4">
-          <ScrollReveal width="100%">
-            <h2 className="text-4xl font-bold text-center mb-4 text-white">What's Possible With HSC Builders</h2>
-          </ScrollReveal>
-          <ScrollReveal width="100%" delay={0.2}>
-            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              From overgrown and neglected to stunning outdoor spaces built for years of enjoyment.
-            </p>
-          </ScrollReveal>
-          <FadeIn delay={0.3}>
-            <BeforeAfterCarousel projects={beforeAfterProjects} />
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Recent Projects Section */}
       <section className="py-16 bg-granite-dark">
         <div className="container mx-auto px-4">
