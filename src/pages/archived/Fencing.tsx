@@ -8,6 +8,7 @@ import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 import { StickyTopNavBar } from '../../components/StickyTopNavBar';
 
+import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
 const fencingHeadlines = [
   "Leaning Fence Posts?",
   "Loose, Wobbly Panels?",
@@ -90,59 +91,28 @@ export default function Fencing() {
             </p>
           </ScrollReveal>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Concrete footings</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Level installation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Old fence removal</span>
-                </li>
-              </ul>
+          <FadeIn delay={0.4}>
+            <FeaturesSectionWithHoverEffects />
+          </FadeIn>
+
+          {/* Bonus Banner */}
+          <FadeIn delay={0.6}>
+            <div className="max-w-5xl mx-auto mt-12">
+              <div className="bg-[#2B2B2B]/80 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-gray-700 shadow-2xl">
+                <div className="text-center space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    This Month Only — Bonus <span className="text-accent">Post Treatment & Finish</span>
+                  </h3>
+                  <p className="text-lg text-gray-200">
+                    Book your fencing project this month and we'll include professional post treatment and protective finish — <span className="text-accent font-semibold">worth £250</span>.
+                  </p>
+                  <p className="text-base text-gray-300 italic">
+                    Protect your investment and extend fence life by years.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Pressure-treated timber</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Galvanized fixings</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Gravel boards included</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">17+ years experience</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Fast installation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Guaranteed workmanship</span>
-                </li>
-              </ul>
-            </div>
-          </StaggerContainer>
+          </FadeIn>
 
           <FadeIn delay={0.8}>
             <div className="max-w-5xl mx-auto mt-6 text-center">

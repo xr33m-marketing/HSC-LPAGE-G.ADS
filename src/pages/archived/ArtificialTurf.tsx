@@ -8,6 +8,7 @@ import ServiceHero from '../../components/ServiceHero';
 import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 import { StickyTopNavBar } from '../../components/StickyTopNavBar';
+import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
 
 const turfHeadlines = [
   "Patchy Grass?",
@@ -120,59 +121,28 @@ export default function ArtificialTurf() {
             </p>
           </ScrollReveal>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Full excavation</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Drainage solutions</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Weed membrane</span>
-                </li>
-              </ul>
+          <FadeIn delay={0.4}>
+            <FeaturesSectionWithHoverEffects />
+          </FadeIn>
+
+          {/* Bonus Banner */}
+          <FadeIn delay={0.6}>
+            <div className="max-w-5xl mx-auto mt-12">
+              <div className="bg-[#2B2B2B]/80 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-gray-700 shadow-2xl">
+                <div className="text-center space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    This Month Only — Bonus <span className="text-accent">Garden Tidy-Up Service</span>
+                  </h3>
+                  <p className="text-lg text-gray-200">
+                    Book your artificial turf installation this month and we'll include a complete garden cleanup and waste removal — <span className="text-accent font-semibold">worth £250</span>.
+                  </p>
+                  <p className="text-base text-gray-300 italic">
+                    Start fresh with a completely cleared and prepared space.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Premium Materials</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Realistic appearance</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">UV resistant</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Pet friendly</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">17+ years experience</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Local knowledge</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Guaranteed workmanship</span>
-                </li>
-              </ul>
-            </div>
-          </StaggerContainer>
+          </FadeIn>
 
           <FadeIn delay={0.8}>
             <div className="max-w-5xl mx-auto mt-6 text-center">

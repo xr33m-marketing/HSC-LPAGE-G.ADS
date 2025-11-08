@@ -7,6 +7,7 @@ import BeforeAfterCarousel from '../components/ui/before-after-carousel';
 import ServiceHero from '../components/ServiceHero';
 import Footer from '../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../components/ScrollReveal';
+import { FeaturesSectionWithHoverEffects } from '../components/ui/features-section-hover';
 import { StickyTopNavBar } from '../components/StickyTopNavBar';
 
 const landscapingHeadlines = [
@@ -124,60 +125,28 @@ export default function Landscaping() {
               We don't cut corners, use cheap materials, or leave you with drainage problems. Every landscaping project is designed to enhance your outdoor space and backed by our commitment to quality.
             </p>
           </ScrollReveal>
+          <FadeIn delay={0.4}>
+            <FeaturesSectionWithHoverEffects />
+          </FadeIn>
 
-          <StaggerContainer className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Expert leveling</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Drainage solutions</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Ground testing</span>
-                </li>
-              </ul>
+          {/* Bonus Banner */}
+          <FadeIn delay={0.6}>
+            <div className="max-w-5xl mx-auto mt-12">
+              <div className="bg-[#2B2B2B]/80 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-gray-700 shadow-2xl">
+                <div className="text-center space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    This Month Only — Bonus <span className="text-accent">Garden Tidy-Up Service</span>
+                  </h3>
+                  <p className="text-lg text-gray-200">
+                    Book your landscaping project this month and we'll include a complete garden cleanup and waste removal — <span className="text-accent font-semibold">worth £250</span>.
+                  </p>
+                  <p className="text-base text-gray-300 italic">
+                    Start your new garden completely fresh and pristine.
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Premium products</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Weather resistant</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Long-lasting finish</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bg-granite-medium p-6 rounded-lg border border-gray-600">
-              <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">17+ years experience</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Local knowledge</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <Check className="text-green-400" size={20} />
-                  <span className="text-gray-200">Council compliance</span>
-                </li>
-              </ul>
-            </div>
-          </StaggerContainer>
+          </FadeIn>
 
           {/* Call Button */}
           <FadeIn delay={0.8}>

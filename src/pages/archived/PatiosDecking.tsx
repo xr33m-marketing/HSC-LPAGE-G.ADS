@@ -8,6 +8,7 @@ import { defaultFeatureSteps } from '../../components/FeatureStepsData';
 import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
 import ServiceHero from '../../components/ServiceHero';
 import ReferralSection from '../../components/ReferralSection';
+import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
 import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 
@@ -123,65 +124,49 @@ export default function PatiosDecking() {
       {/* Solution Section */}
       <section className="py-16 bg-granite-darker">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Built To Last. Designed For You. Done Properly.</h2>
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-200 mb-8 text-center">
+          <ScrollReveal width="100%">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-white">Built To Last. Designed For You. Done Properly.</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
               We don't cut corners, use cheap materials, or leave you with drainage problems.
             </p>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Proper Preparation</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Full excavation</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Drainage solutions</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Ground testing</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Quality Materials</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Premium products</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Proper edging</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Strong foundation</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-granite-dark p-6 rounded-lg border border-gray-600">
-                <h3 className="font-bold text-xl mb-4 text-white">Expert Service</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">17+ years experience</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Local knowledge</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check className="text-green-400" size={20} />
-                    <span className="text-gray-200">Planning compliance</span>
-                  </li>
-                </ul>
+          </ScrollReveal>
+          <FadeIn delay={0.4}>
+            <FeaturesSectionWithHoverEffects />
+          </FadeIn>
+
+          {/* Bonus Banner */}
+          <FadeIn delay={0.6}>
+            <div className="max-w-5xl mx-auto mt-12">
+              <div className="bg-[#2B2B2B]/80 backdrop-blur-sm rounded-lg p-6 md:p-8 border border-gray-700 shadow-2xl">
+                <div className="text-center space-y-3">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                    This Month Only — Bonus <span className="text-accent">Jet Wash & Seal Finish</span>
+                  </h3>
+                  <p className="text-lg text-gray-200">
+                    Book your patio or decking project this month and we'll include a full professional wash & seal treatment — <span className="text-accent font-semibold">worth £250</span>.
+                  </p>
+                  <p className="text-base text-gray-300 italic">
+                    Keeps your outdoor space looking brand new for years.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+          </FadeIn>
+
+          {/* Call Button */}
+          <FadeIn delay={0.8}>
+            <div className="max-w-5xl mx-auto mt-6 text-center">
+              <a
+                href="tel:07490738974"
+                className="inline-flex items-center gap-3 bg-accent hover:bg-accent-dark text-white font-bold py-4 px-8 rounded-lg text-lg transition duration-300 shadow-lg hover:shadow-xl"
+              >
+                <Phone className="w-6 h-6" />
+                No Harm In Calling
+              </a>
+            </div>
+          </FadeIn>
         </div>
       </section>
 
