@@ -117,7 +117,8 @@ export default function ServiceHero({
 
   return (
     <>
-      <div className="relative bg-granite overflow-x-hidden overflow-y-auto min-h-screen w-full pt-16">
+      {/* Hero Section - Carousel Only */}
+      <div className="relative bg-granite overflow-hidden w-full min-h-[70vh] md:min-h-[80vh] pt-16">
         {/* Hero Background Image Carousel */}
         <div className="absolute inset-0 w-full h-full z-0">
           {carouselImages.map((image, index) => (
@@ -140,15 +141,11 @@ export default function ServiceHero({
 
         {/* Gradient Overlays */}
         <div className="absolute inset-0 z-[1]">
-          {/* Gradient Overlay: Top 80% → Bottom 40% */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/65 to-black/40"></div>
-
-          {/* Subtle reflection effect */}
-          <div className="absolute inset-0 bg-gradient-to-t from-white/5 via-transparent to-transparent opacity-30"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/60"></div>
         </div>
 
         {/* Hero Content - Centered */}
-        <div className="relative z-10 min-h-[90vh] flex flex-col items-center justify-center px-4 py-20 text-center w-full">
+        <div className="relative z-10 min-h-[70vh] md:min-h-[80vh] flex flex-col items-center justify-center px-4 py-20 text-center w-full">
           <div className="max-w-5xl mx-auto space-y-8 w-full">
             {/* Problem Headline */}
             <ScrollReveal width="100%" delay={0.2}>
@@ -168,19 +165,12 @@ export default function ServiceHero({
             {/* Subheadline - Agitate */}
             <ScrollReveal width="100%" delay={0.4}>
               <p className="text-white/90 text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-                You notice it every time you park — the cracks, the weeds, the uneven patches. It's gone from annoying to embarrassing.
-              </p>
-            </ScrollReveal>
-
-            {/* Support Line - Solution */}
-            <ScrollReveal width="100%" delay={0.6}>
-              <p className="text-white text-base md:text-lg lg:text-xl font-medium leading-relaxed max-w-3xl mx-auto drop-shadow-md">
-                Our expert team transforms tired driveways into flawless entrances — backed by a 24-Month Workmanship Guarantee.
+                {description}
               </p>
             </ScrollReveal>
 
             {/* CTA Buttons - Centered */}
-            <FadeIn delay={0.8}>
+            <FadeIn delay={0.6}>
               <div className="pt-8 flex flex-col items-center gap-4">
               <button
                 onClick={scrollToForm}
@@ -209,16 +199,18 @@ export default function ServiceHero({
             </FadeIn>
           </div>
         </div>
+      </div>
 
-        {/* Trust Badges Carousel */}
-        <div className="relative z-20">
-          <FadeIn delay={1.0}>
-            <TrustBadgesCarousel />
-          </FadeIn>
-        </div>
+      {/* Trust Badges Carousel */}
+      <div className="bg-granite py-8">
+        <FadeIn delay={0.2}>
+          <TrustBadgesCarousel />
+        </FadeIn>
+      </div>
 
-        {/* Contact Form Section - Two Column Layout */}
-        <div id="contact-form" className="relative z-20 container mx-auto px-4 py-16">
+      {/* Contact Form Section - Two Column Layout */}
+      <div className="bg-granite w-full">
+        <div id="contact-form" className="container mx-auto px-4 py-16">
           <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-8 items-start">
 
             {/* Left Column - Content */}
