@@ -110,19 +110,19 @@ export default function Driveways() {
           </ScrollReveal>
           <StaggerContainer className="max-w-4xl mx-auto space-y-6 text-lg text-gray-200">
             <p>
-              You've thought about sorting it more than once — maybe even looked at quotes — but something's always stopped you.
+              You've thought about sorting your driveway more than once — maybe even looked at quotes from pavers Glasgow — but something's always stopped you.
             </p>
             <p>
               Maybe it's the cost. Maybe it's worrying the job won't go smoothly, or that you'll end up chasing builders.
             </p>
             <p>
-              That's why we built a process that's simple, collaborative, and completely pressure-free.
+              That's why we built a process that's simple, collaborative, and completely pressure-free. As experienced driveways Glasgow specialists, we understand what local homeowners need.
             </p>
             <p>
-              From your first site visit to the final brush-down, we'll walk you through every step — clear pricing, quick updates, and expert advice so you always know what's happening.
+              From your first site visit to the final brush-down, our professional pavers will walk you through every step — clear pricing, quick updates, and expert advice so you always know what's happening.
             </p>
             <p className="font-semibold text-white text-xl border-l-4 border-accent pl-6 py-2">
-              Here's how we make getting your driveway done feel easy — and make sure the result lasts for years to come.
+              Here's how we make getting your driveways Glasgow installation feel easy — and make sure the result lasts for years to come.
             </p>
           </StaggerContainer>
         </div>
@@ -136,7 +136,7 @@ export default function Driveways() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
-              We don't cut corners, use cheap materials, or leave you with drainage problems. Every driveway we build is engineered to withstand Glasgow's weather and backed by our commitment to quality.
+              We don't cut corners, use cheap materials, or leave you with drainage problems. Every driveway we build is engineered to withstand Glasgow's weather and backed by our commitment to quality. Our expert pavers Glasgow team delivers professional driveways that last.
             </p>
           </ScrollReveal>
           <FadeIn delay={0.4}>
@@ -234,7 +234,7 @@ export default function Driveways() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed driveway installations
+              See the quality of our pavers Glasgow craftsmanship in these completed driveways Glasgow installations
             </p>
           </ScrollReveal>
           <FadeIn delay={0.3}>
