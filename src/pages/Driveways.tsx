@@ -86,9 +86,9 @@ export default function Driveways() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={drivewayHeadlines}
-        backgroundImage="/HSC-HERO-DRIVEWAY.webp"
+        backgroundImage="/hero-hsc-landscaping-3.webp"
         carouselImages={[
-          "/HSC-HERO-DRIVEWAY.webp",
+          "/hero-hsc-landscaping-3.webp",
           "/d-way-hero-hsc-3.webp",
           "/d-way-hero-hsc-1.webp"
         ]}
