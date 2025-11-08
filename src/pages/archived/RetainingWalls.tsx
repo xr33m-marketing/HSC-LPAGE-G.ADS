@@ -103,10 +103,11 @@ export default function RetainingWalls() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={wallHeadlines}
-        backgroundImage="https://imgur.com/N1I2w82.jpg"
+        backgroundImage="/walls-hsc-hero-3.webp"
         carouselImages={[
-          "https://imgur.com/njO8Dct.jpg",
-          "https://imgur.com/lkO0R4t.jpg"
+          "/walls-hsc-hero-3.webp",
+          "/hsc-hero-walls-2.webp",
+          "/hero-hsc-walls-1.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
