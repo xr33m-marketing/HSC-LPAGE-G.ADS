@@ -8,17 +8,6 @@ import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 import { StickyTopNavBar } from '../../components/StickyTopNavBar';
 import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
-import RecentProjectsCarousel from '../../components/RecentProjectsCarousel';
-const recentProjects = [
-  { image: '', alt: 'Fencing Project 1' },
-  { image: '', alt: 'Fencing Project 2' },
-  { image: '', alt: 'Fencing Project 3' },
-  { image: '', alt: 'Fencing Project 4' },
-  { image: '', alt: 'Fencing Project 5' },
-  { image: '', alt: 'Fencing Project 6' },
-  { image: '', alt: 'Fencing Project 7' }
-];
-
 const fencingHeadlines = [
   "Leaning Fence Posts?",
   "Loose, Wobbly Panels?",
@@ -30,8 +19,16 @@ const fencingHeadlines = [
 
 const beforeAfterProjects = [
   {
-    beforeImage: "https://imgur.com/Orv62sB.jpg",
-    afterImage: "https://imgur.com/rH1nNs6.jpg"
+    beforeImage: "/BEfore-HSC-Fencing-Gallery.webp",
+    afterImage: "/HSC-fencing-SERVICES (1).webp"
+  },
+  {
+    beforeImage: "/HSC-fencing-BEFORE-GALLERY (1).webp",
+    afterImage: "/SERVICES-fencing-HSC (1).webp"
+  },
+  {
+    beforeImage: "/fencing-BEFORE-HSC-Gallery (1).webp",
+    afterImage: "/Compostite-fencing-HSC-home (1).webp"
   }
 ];
 
@@ -151,23 +148,6 @@ export default function Fencing() {
           </ScrollReveal>
           <FadeIn delay={0.3}>
             <BeforeAfterCarousel projects={beforeAfterProjects} />
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Recent Projects Section */}
-      <section className="py-16 bg-granite-dark">
-        <div className="container mx-auto px-4">
-          <ScrollReveal width="100%">
-            <h2 className="text-4xl font-bold text-center mb-4 text-white">Our Recent Projects</h2>
-          </ScrollReveal>
-          <ScrollReveal width="100%" delay={0.2}>
-            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our fencers Glasgow craftsmanship in these completed fencing installations
-            </p>
-          </ScrollReveal>
-          <FadeIn delay={0.3}>
-            <RecentProjectsCarousel projects={recentProjects} />
           </FadeIn>
         </div>
       </section>
