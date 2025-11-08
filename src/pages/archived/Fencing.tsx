@@ -60,8 +60,12 @@ export default function Fencing() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={fencingHeadlines}
-        backgroundImage="https://imgur.com/Orv62sB.jpg"
-        carouselImages={["https://imgur.com/Orv62sB.jpg"]}
+        backgroundImage="/fencing-hsc-hero-1.webp"
+        carouselImages={[
+          "/fencing-hsc-hero-1.webp",
+          "/hsc-hero-fencing-2.webp",
+          "/hsc-hero-decking-2.webp"
+        ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
           "Pick Your Free Upgrade: Jet Wash Finish, Garden Tidy-Up, or Dump Run"
