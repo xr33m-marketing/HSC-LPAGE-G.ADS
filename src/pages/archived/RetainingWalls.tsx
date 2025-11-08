@@ -256,8 +256,25 @@ export default function RetainingWalls() {
 
       {/* Feature Steps Section */}
       <FeatureSteps
-        features={defaultFeatureSteps}
+        features={[
+          {
+            step: "Free On-Site Consultation & Design Plan",
+            content: "We visit your property to assess your terrain, discuss your goals, and show material and design options. You'll get a clear quote and structural plan — no guesswork, no pressure.",
+            image: "/HSC-STEP1-PROCESS copy.webp"
+          },
+          {
+            step: "Expert Groundwork & Installation",
+            content: "Once approved, our in-house team handles everything — from excavation and drainage setup to wall construction and reinforcement. No subcontractors, no cut corners, just a clean, efficient build done right the first time.",
+            image: "/step2-HSC-PROCESS copy.webp"
+          },
+          {
+            step: "Final Inspection & Hand-Off",
+            content: "We don't just finish the job — we perfect it. Every retaining wall is thoroughly inspected for stability and drainage, with all finishing touches completed to ensure lasting quality.",
+            image: "/step3-HSC-PROCESS copy.webp"
+          }
+        ]}
         title="How It Works – A Simple 3-Step Process"
+        subtitle="Our average installation takes 3–7 days, depending on size and complexity. You'll always deal directly with our team — start to finish."
         className="bg-granite-light"
       />
 

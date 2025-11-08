@@ -234,8 +234,25 @@ export default function PatiosDecking() {
 
       {/* Feature Steps Section */}
       <FeatureSteps
-        features={defaultFeatureSteps}
+        features={[
+          {
+            step: "Free On-Site Consultation & Design Plan",
+            content: "We visit your property to assess your current surface, discuss your goals, and show material and layout options. You'll get a clear quote and plan — no guesswork, no pressure.",
+            image: "/HSC-STEP1-PROCESS copy.webp"
+          },
+          {
+            step: "Expert Groundwork & Installation",
+            content: "Once approved, our in-house team handles everything — from excavation and drainage setup to paving or decking installation. No subcontractors, no cut corners, just a clean, efficient build done right the first time.",
+            image: "/step2-HSC-PROCESS copy.webp"
+          },
+          {
+            step: "Final Jet Wash, Seal & Hand-Off",
+            content: "We don't just finish the job — we perfect it. Every new patio or deck gets a professional jet wash and finishing treatment to lock in that just-installed look and long-term durability.",
+            image: "/step3-HSC-PROCESS copy.webp"
+          }
+        ]}
         title="How It Works – A Simple 3-Step Process"
+        subtitle="Our average installation takes 3–5 days, depending on size. You'll always deal directly with our team — start to finish."
         className="bg-granite-light"
       />
 
