@@ -9,8 +9,6 @@ import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 import { StickyTopNavBar } from '../../components/StickyTopNavBar';
 import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
-import RecentProjectsCarousel from '../../components/RecentProjectsCarousel';
-
 const turfHeadlines = [
   "Patchy Grass?",
   "Muddy Mess?",
@@ -18,16 +16,6 @@ const turfHeadlines = [
   "Brown & Dead Patches?",
   "Constant Maintenance?",
   "Waterlogged Lawn?"
-];
-
-const recentProjects = [
-  { image: '', alt: 'Artificial Turf Project 1' },
-  { image: '', alt: 'Artificial Turf Project 2' },
-  { image: '', alt: 'Artificial Turf Project 3' },
-  { image: '', alt: 'Artificial Turf Project 4' },
-  { image: '', alt: 'Artificial Turf Project 5' },
-  { image: '', alt: 'Artificial Turf Project 6' },
-  { image: '', alt: 'Artificial Turf Project 7' }
 ];
 
 const beforeAfterProjects = [
@@ -182,23 +170,6 @@ export default function ArtificialTurf() {
           </ScrollReveal>
           <FadeIn delay={0.3}>
             <BeforeAfterCarousel projects={beforeAfterProjects} />
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Recent Projects Section */}
-      <section className="py-16 bg-granite-dark">
-        <div className="container mx-auto px-4">
-          <ScrollReveal width="100%">
-            <h2 className="text-4xl font-bold text-center mb-4 text-white">Our Recent Projects</h2>
-          </ScrollReveal>
-          <ScrollReveal width="100%" delay={0.2}>
-            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed artificial turf installations
-            </p>
-          </ScrollReveal>
-          <FadeIn delay={0.3}>
-            <RecentProjectsCarousel projects={recentProjects} />
           </FadeIn>
         </div>
       </section>
