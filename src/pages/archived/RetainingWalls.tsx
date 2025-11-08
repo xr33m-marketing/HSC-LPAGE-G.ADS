@@ -121,12 +121,12 @@ export default function RetainingWalls() {
       {/* Pain Points Section */}
       <section className="py-16 bg-primary">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Wall's Not Getting Better on Its Own</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Retaining Wall's Not Getting Better on Its Own</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
-            <p>Crumbling bricks. Leaning sections. That worrying crack that keeps getting bigger.</p>
+            <p>Crumbling bricks. Leaning sections. That worrying crack that keeps getting bigger on your retaining wall.</p>
             <p>You've looked at it and thought <i>"we really need to fix this"</i> — then let it go another 6 months.</p>
-            <p>Meanwhile, the lean gets worse. The cracks widen. That temporary fix from last year is failing.</p>
-            <p className="font-semibold">Let's fix it once — and do it right.</p>
+            <p>Meanwhile, the lean gets worse. The cracks widen. That temporary masonry fix from last year is failing.</p>
+            <p className="font-semibold">Let's fix it once — and do it right with proper masonry work.</p>
           </div>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function RetainingWalls() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
-              We don't cut corners, use cheap materials, or leave you with drainage problems.
+              We don't cut corners, use cheap materials, or leave you with drainage problems. Our expert masonry ensures every retaining wall is structurally sound and built to last.
             </p>
           </ScrollReveal>
           <FadeIn delay={0.4}>
@@ -222,7 +222,7 @@ export default function RetainingWalls() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed retaining wall installations
+              See the quality of our masonry craftsmanship in these completed retaining wall installations
             </p>
           </ScrollReveal>
           <FadeIn delay={0.3}>

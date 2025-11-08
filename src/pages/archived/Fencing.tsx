@@ -81,8 +81,8 @@ export default function Fencing() {
           </ScrollReveal>
           <StaggerContainer className="max-w-4xl mx-auto space-y-6 text-lg text-gray-200">
             <p>Every storm makes it worse. Privacy's gone. Neighbors can see everything. And you're worried it'll blow down completely.</p>
-            <p>You know it needs sorted — but finding reliable fencing contractors, getting quotes, coordinating everything… it feels like a hassle.</p>
-            <p>That's why we built a process that's simple, collaborative, and completely pressure-free.</p>
+            <p>You know it needs sorted — but finding reliable fencers near me, getting quotes from fencers Glasgow, coordinating everything… it feels like a hassle.</p>
+            <p>That's why we built a process that's simple, collaborative, and completely pressure-free. As experienced fencers in Glasgow, we make the entire process easy.</p>
             <p className="font-semibold text-white text-xl border-l-4 border-accent pl-6 py-2">
               Here's how we make getting your fence sorted feel easy — and make sure it lasts for years to come.
             </p>
@@ -97,7 +97,7 @@ export default function Fencing() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
-              We don't use weak posts or skip the groundwork. Every fence we build is engineered to withstand Glasgow's weather with proper concrete footings and quality materials.
+              We don't use weak posts or skip the groundwork. As professional fencers Glasgow trusts, every fence we build is engineered to withstand local weather with proper concrete footings and quality materials.
             </p>
           </ScrollReveal>
 
@@ -159,7 +159,7 @@ export default function Fencing() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed fencing installations
+              See the quality of our fencers Glasgow craftsmanship in these completed fencing installations
             </p>
           </ScrollReveal>
           <FadeIn delay={0.3}>

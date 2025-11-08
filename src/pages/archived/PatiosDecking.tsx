@@ -124,10 +124,10 @@ export default function PatiosDecking() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">Your Patio's Not Getting Better on Its Own</h2>
           <div className="max-w-3xl mx-auto space-y-6 text-lg text-gray-200">
-            <p>Cracked slabs. Uneven surfaces. That wobbly decking that's starting to rot.</p>
+            <p>Cracked slabs. Uneven surfaces. That wobbly decking that's starting to rot. Maybe you've been considering composite decking as a low-maintenance solution?</p>
             <p>You've looked at it and thought <i>"we really need to fix this"</i> — then let it go another 6 months.</p>
             <p>Meanwhile, the cracks widen. The lean gets worse. That temporary fix from last summer is falling apart.</p>
-            <p className="font-semibold">Let's fix it once — and do it right.</p>
+            <p className="font-semibold">Let's fix it once — and do it right with premium materials including composite wood decking options.</p>
           </div>
         </div>
       </section>
@@ -140,7 +140,7 @@ export default function PatiosDecking() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-lg text-gray-200 mb-8 text-center max-w-3xl mx-auto">
-              We don't cut corners, use cheap materials, or leave you with drainage problems.
+              We don't cut corners, use cheap materials, or leave you with drainage problems. Whether you choose traditional paving or modern composite decking, we deliver quality installations that last.
             </p>
           </ScrollReveal>
           <FadeIn delay={0.4}>
@@ -200,7 +200,7 @@ export default function PatiosDecking() {
           </ScrollReveal>
           <ScrollReveal width="100%" delay={0.2}>
             <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed patio and decking installations
+              See the quality of our craftsmanship in these completed patio and composite wood decking installations
             </p>
           </ScrollReveal>
           <FadeIn delay={0.3}>
