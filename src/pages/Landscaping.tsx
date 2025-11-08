@@ -44,7 +44,11 @@ const recentProjects = [
   { image: '/HSC-Full-transformation-Gallery.webp', alt: 'Complete Garden Transformation' },
   { image: '/HSC-d-way-GAllery-after.webp', alt: 'Driveway and Landscaping Project' },
   { image: '/HSC-FULL-Transformation.webp', alt: 'Full Property Landscaping' },
-  { image: '/HSC-Gallery-Full-TRansformation (1).webp', alt: 'Gallery Full Transformation' }
+  { image: '/HSC-Gallery-Full-TRansformation (1).webp', alt: 'Gallery Full Transformation' },
+  { image: '/Full-Renovation-LAndscaping-HSC (1).webp', alt: 'Full Renovation Landscaping Project' },
+  { image: '/Full-Transformtation-HSC (1).webp', alt: 'Complete Property Transformation' },
+  { image: '/HSC-Hardscaping-Steps-Services (1).webp', alt: 'Hardscaping Steps Installation' },
+  { image: '/gallery-after-transformation.webp', alt: 'Garden After Transformation' }
 ];
 
 export default function Landscaping() {
