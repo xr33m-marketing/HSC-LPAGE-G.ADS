@@ -36,6 +36,18 @@ const beforeAfterProjects = [
   {
     beforeImage: "https://imgur.com/yGuMKW6.jpg",
     afterImage: "https://imgur.com/fvM4Fdg.jpg"
+  },
+  {
+    beforeImage: "/before-art-turf-hsc.webp",
+    afterImage: "/turf-artificial-HSC-Service (1).webp"
+  },
+  {
+    beforeImage: "/art-turf-hsc-before.webp",
+    afterImage: "/after-turf-hsc.webp"
+  },
+  {
+    beforeImage: "/art-tirf-before-hsc.webp",
+    afterImage: "/artificial-turf-HSC-Service (1).webp"
   }
 ];
 
