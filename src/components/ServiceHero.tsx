@@ -38,11 +38,21 @@ export default function ServiceHero({
   const { setService } = useNotificationStore();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     initGclidTracking();
     setService(service);
   }, [service, setService]);
+
+  useEffect(() => {
+    if (carouselImages.length > 1) {
+      const interval = setInterval(() => {
+        setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }
+  }, [carouselImages.length]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -108,18 +118,25 @@ export default function ServiceHero({
   return (
     <>
       <div className="relative bg-granite overflow-x-hidden overflow-y-auto min-h-screen w-full pt-16">
-        {/* Hero Background Image */}
-        <img
-          src={backgroundImage}
-          alt="Hero Background"
-          className="absolute inset-0 w-full h-full object-cover z-0"
-          loading="eager"
-          fetchPriority="high"
-          onError={(e) => {
-            console.error('Image failed to load:', backgroundImage);
-            e.currentTarget.style.display = 'none';
-          }}
-        />
+        {/* Hero Background Image Carousel */}
+        <div className="absolute inset-0 w-full h-full z-0">
+          {carouselImages.map((image, index) => (
+            <img
+              key={image}
+              src={image}
+              alt={`Hero Background ${index + 1}`}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              }`}
+              loading={index === 0 ? "eager" : "lazy"}
+              fetchPriority={index === 0 ? "high" : "low"}
+              onError={(e) => {
+                console.error('Image failed to load:', image);
+                e.currentTarget.style.display = 'none';
+              }}
+            />
+          ))}
+        </div>
 
         {/* Gradient Overlays */}
         <div className="absolute inset-0 z-[1]">
