@@ -32,16 +32,16 @@ const recentProjects = [
 
 const beforeAfterProjects = [
   {
-    beforeImage: "https://imgur.com/ZHY9jPC.jpg",
-    afterImage: "https://imgur.com/9HYYjWw.jpg"
+    beforeImage: "/before-art-turf-hsc.webp",
+    afterImage: "/turf-artificial-HSC-Service (1).webp"
   },
   {
-    beforeImage: "https://imgur.com/yGuMKW6.jpg",
-    afterImage: "https://imgur.com/fvM4Fdg.jpg"
+    beforeImage: "/art-turf-hsc-before.webp",
+    afterImage: "/after-turf-hsc.webp"
   },
   {
-    beforeImage: "https://imgur.com/4SSmzsw.jpg",
-    afterImage: "https://imgur.com/WxHNpJA.jpg"
+    beforeImage: "/art-tirf-before-hsc.webp",
+    afterImage: "/artificial-turf-HSC-Service (1).webp"
   }
 ];
 
