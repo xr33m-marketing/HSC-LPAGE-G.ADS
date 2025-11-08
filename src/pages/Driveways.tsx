@@ -88,7 +88,9 @@ export default function Driveways() {
         headlines={drivewayHeadlines}
         backgroundImage="/HSC-HERO-DRIVEWAY.webp"
         carouselImages={[
-          "/HSC-HERO-DRIVEWAY.webp"
+          "/HSC-HERO-DRIVEWAY.webp",
+          "/d-way-hero-hsc-3.webp",
+          "/d-way-hero-hsc-1.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
