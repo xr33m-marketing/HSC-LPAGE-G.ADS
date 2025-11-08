@@ -102,12 +102,13 @@ export default function PatiosDecking() {
   return (
     <div className="min-h-screen bg-granite w-full overflow-x-hidden">
       <StickyTopNavBar />
-      <ServiceHero 
+      <ServiceHero
         headlines={patioHeadlines}
-        backgroundImage="https://imgur.com/QE34QkO.jpg"
+        backgroundImage="/hero-hsc-patios-3.webp"
         carouselImages={[
-          "https://imgur.com/MqEaUjk.jpg",
-          "https://imgur.com/21YLIoY.jpg"
+          "/hero-hsc-patios-3.webp",
+          "/patios-hero-hsc-2.webp",
+          "/hero-hsc-patios-1.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
