@@ -66,9 +66,11 @@ export default function ArtificialTurf() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={turfHeadlines}
-        backgroundImage="https://imgur.com/fvM4Fdg.jpg"
+        backgroundImage="/hsc-hero-art-turf.webp"
         carouselImages={[
-          "https://imgur.com/fvM4Fdg.jpg"
+          "/hsc-hero-art-turf.webp",
+          "/hsc-art-turf-hero .webp",
+          "/hero-art-turf-hsc.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
