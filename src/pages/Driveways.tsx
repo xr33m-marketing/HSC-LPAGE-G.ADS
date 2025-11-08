@@ -35,6 +35,16 @@ const beforeAfterProjects = [
   }
 ];
 
+const recentProjects = [
+  { image: '', alt: 'Driveway Project 1' },
+  { image: '', alt: 'Driveway Project 2' },
+  { image: '', alt: 'Driveway Project 3' },
+  { image: '', alt: 'Driveway Project 4' },
+  { image: '', alt: 'Driveway Project 5' },
+  { image: '', alt: 'Driveway Project 6' },
+  { image: '', alt: 'Driveway Project 7' }
+];
+
 export default function Driveways() {
   const testimonials = [
     {
@@ -228,7 +238,7 @@ export default function Driveways() {
             </p>
           </ScrollReveal>
           <FadeIn delay={0.3}>
-            <RecentProjectsCarousel />
+            <RecentProjectsCarousel projects={recentProjects} />
           </FadeIn>
         </div>
       </section>

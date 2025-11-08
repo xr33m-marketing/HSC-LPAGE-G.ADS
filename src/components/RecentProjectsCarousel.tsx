@@ -6,7 +6,16 @@ import {
   CarouselItem,
 } from '@/components/ui/carousel-base';
 
-const recentProjects = [
+interface Project {
+  image: string;
+  alt: string;
+}
+
+interface RecentProjectsCarouselProps {
+  projects?: Project[];
+}
+
+const defaultProjects: Project[] = [
   {
     image: '/RP-DRIVE-HSC.webp',
     alt: 'HSC Driveway Project'
@@ -37,7 +46,7 @@ const recentProjects = [
   }
 ];
 
-export default function RecentProjectsCarousel() {
+export default function RecentProjectsCarousel({ projects = defaultProjects }: RecentProjectsCarouselProps) {
   return (
     <div className="w-full">
       <CarouselBase
@@ -51,7 +60,7 @@ export default function RecentProjectsCarousel() {
         className="w-full"
       >
         <CarouselContent className="-ml-6 md:-ml-8">
-          {[...recentProjects, ...recentProjects].map((project, index) => (
+          {[...projects, ...projects].map((project, index) => (
             <CarouselItem key={index} className="pl-6 md:pl-8 basis-full md:basis-1/2 lg:basis-1/3">
               <div className="rounded-lg overflow-hidden shadow-2xl border border-gray-700">
                 <img

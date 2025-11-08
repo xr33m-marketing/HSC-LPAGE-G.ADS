@@ -9,8 +9,19 @@ import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
 import ServiceHero from '../../components/ServiceHero';
 import ReferralSection from '../../components/ReferralSection';
 import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
+import RecentProjectsCarousel from '../../components/RecentProjectsCarousel';
 import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
+
+const recentProjects = [
+  { image: '', alt: 'Patio & Decking Project 1' },
+  { image: '', alt: 'Patio & Decking Project 2' },
+  { image: '', alt: 'Patio & Decking Project 3' },
+  { image: '', alt: 'Patio & Decking Project 4' },
+  { image: '', alt: 'Patio & Decking Project 5' },
+  { image: '', alt: 'Patio & Decking Project 6' },
+  { image: '', alt: 'Patio & Decking Project 7' }
+];
 
 const patioHeadlines = [
   "Cracked Slabs?",
@@ -178,6 +189,23 @@ export default function PatiosDecking() {
             Too cracked. Too uneven. Too dangerous. These ones were exactly the same — until we got stuck in.
           </p>
           <BeforeAfterCarousel projects={beforeAfterProjects} />
+        </div>
+      </section>
+
+      {/* Recent Projects Section */}
+      <section className="py-16 bg-granite-dark">
+        <div className="container mx-auto px-4">
+          <ScrollReveal width="100%">
+            <h2 className="text-4xl font-bold text-center mb-4 text-white">Our Recent Projects</h2>
+          </ScrollReveal>
+          <ScrollReveal width="100%" delay={0.2}>
+            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
+              See the quality of our craftsmanship in these completed patio and decking installations
+            </p>
+          </ScrollReveal>
+          <FadeIn delay={0.3}>
+            <RecentProjectsCarousel projects={recentProjects} />
+          </FadeIn>
         </div>
       </section>
 
