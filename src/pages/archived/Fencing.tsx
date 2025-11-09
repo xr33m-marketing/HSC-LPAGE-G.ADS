@@ -65,11 +65,11 @@ export default function Fencing() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={fencingHeadlines}
-        backgroundImage="https://images.unsplash.com/photo-1597818686442-ed0b8f53c2b6?auto=format&fit=crop&q=80&w=2000"
+        backgroundImage="/fencing-hsc-hero-1.webp"
         carouselImages={[
-          "https://images.unsplash.com/photo-1597818686442-ed0b8f53c2b6?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1600011689032-8b628b8a8747?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1600573471071-9162f77d1679?auto=format&fit=crop&q=80&w=2000"
+          "/fencing-hsc-hero-1.webp",
+          "/hsc-hero-fencing-2.webp",
+          "/hsc-hero-decking-2.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",

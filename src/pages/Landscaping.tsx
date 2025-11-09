@@ -96,11 +96,11 @@ export default function Landscaping() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={landscapingHeadlines}
-        backgroundImage="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=2000"
+        backgroundImage="/hero-landscping-HSC.webp"
         carouselImages={[
-          "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?auto=format&fit=crop&q=80&w=2000"
+          "/hero-landscping-HSC.webp",
+          "/hsc-landscaping-hero-2.webp",
+          "/hero-landscaping-3-hsc.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",

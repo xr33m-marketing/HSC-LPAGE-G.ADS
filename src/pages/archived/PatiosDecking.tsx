@@ -104,11 +104,11 @@ export default function PatiosDecking() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={patioHeadlines}
-        backgroundImage="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=2000"
+        backgroundImage="/hero-hsc-patios-3.webp"
         carouselImages={[
-          "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&q=80&w=2000",
-          "https://images.unsplash.com/photo-1600607687644-c7171b42498b?auto=format&fit=crop&q=80&w=2000"
+          "/hero-hsc-patios-3.webp",
+          "/patios-hero-hsc-2.webp",
+          "/hero-hsc-patios-1.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
