@@ -86,11 +86,11 @@ export default function Driveways() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={drivewayHeadlines}
-        backgroundImage="/hero-hsc-landscaping-3.webp"
+        backgroundImage="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=2000"
         carouselImages={[
-          "/hero-hsc-landscaping-3.webp",
-          "/d-way-hero-hsc-3.webp",
-          "/d-way-hero-hsc-1.webp"
+          "https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&q=80&w=2000",
+          "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000",
+          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
