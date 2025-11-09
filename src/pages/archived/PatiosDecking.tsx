@@ -215,23 +215,6 @@ export default function PatiosDecking() {
         </div>
       </section>
 
-      {/* Recent Projects Section */}
-      <section className="py-16 bg-granite-dark">
-        <div className="container mx-auto px-4">
-          <ScrollReveal width="100%">
-            <h2 className="text-4xl font-bold text-center mb-4 text-white">Our Recent Projects</h2>
-          </ScrollReveal>
-          <ScrollReveal width="100%" delay={0.2}>
-            <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-              See the quality of our craftsmanship in these completed patio and composite wood decking installations
-            </p>
-          </ScrollReveal>
-          <FadeIn delay={0.3}>
-            <RecentProjectsCarousel projects={recentProjects} />
-          </FadeIn>
-        </div>
-      </section>
-
       {/* Feature Steps Section */}
       <FeatureSteps
         features={[
