@@ -14,13 +14,18 @@ import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 
 const recentProjects = [
-  { image: '', alt: 'Patio & Decking Project 1' },
-  { image: '', alt: 'Patio & Decking Project 2' },
-  { image: '', alt: 'Patio & Decking Project 3' },
-  { image: '', alt: 'Patio & Decking Project 4' },
-  { image: '', alt: 'Patio & Decking Project 5' },
-  { image: '', alt: 'Patio & Decking Project 6' },
-  { image: '', alt: 'Patio & Decking Project 7' }
+  { image: '/before-hsc-patio-lpage.webp', alt: 'Patio Before Transformation 1' },
+  { image: '/HSC-After-Patios-Gallery.webp', alt: 'Completed Patio Installation' },
+  { image: '/before-patio-lapge-hsc.webp', alt: 'Patio Before Renovation 2' },
+  { image: '/Gallery-HSC-Patios-After.webp', alt: 'Finished Patio Project' },
+  { image: '/After-Patios-HSC-Gallery.webp', alt: 'Modern Patio Completion' },
+  { image: '/before-patio-hec-lpage.webp', alt: 'Patio Before Work Started' },
+  { image: '/During-HSC-Patios-GAllery.webp', alt: 'Patio During Installation' },
+  { image: '/After-HSC-Gallery-Patios.webp', alt: 'Beautiful Finished Patio' },
+  { image: '/after3-Patios-HSC-GAllery.webp', alt: 'Patio Transformation Complete' },
+  { image: '/after2-HSC-patios-Gallery (1).webp', alt: 'Quality Patio Installation' },
+  { image: '/HSC-Before-Gallery-Patios.webp', alt: 'Patio Initial State' },
+  { image: '/Patios-hoe-projects-HSC.webp', alt: 'Professional Patio Work' }
 ];
 
 const patioHeadlines = [
