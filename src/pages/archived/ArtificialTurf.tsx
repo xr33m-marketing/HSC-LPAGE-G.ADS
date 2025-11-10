@@ -71,7 +71,7 @@ export default function ArtificialTurf() {
         carouselImages={[
           "/hsc-hero-art-turf.webp",
           "/hsc-art-turf-hero .webp",
-          "/hero-art-turf-hsc.webp"
+          "/hsc-art-turf-hero  copy.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
