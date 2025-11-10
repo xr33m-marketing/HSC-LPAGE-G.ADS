@@ -192,9 +192,13 @@ export default function ServiceHero({
 
             {/* Subheadline - Agitate */}
             <ScrollReveal width="100%" delay={0.4}>
-              <p className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto drop-shadow-md font-light tracking-wide">
-                {description}
-              </p>
+              <div className="text-white/90 text-base md:text-lg lg:text-xl leading-loose max-w-3xl mx-auto drop-shadow-md font-light tracking-wide space-y-3">
+                {description.split('—').map((line, index) => (
+                  <p key={index} className="mx-auto">
+                    {line.trim()}
+                  </p>
+                ))}
+              </div>
             </ScrollReveal>
 
             {/* CTA Buttons - Centered */}
