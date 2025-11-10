@@ -192,7 +192,7 @@ export default function ServiceHero({
 
             {/* Subheadline - Agitate */}
             <ScrollReveal width="100%" delay={0.4}>
-              <p className="text-white/90 text-lg md:text-xl lg:text-2xl leading-relaxed max-w-3xl mx-auto drop-shadow-md">
+              <p className="text-white/90 text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl mx-auto drop-shadow-md font-light tracking-wide">
                 {description}
               </p>
             </ScrollReveal>
