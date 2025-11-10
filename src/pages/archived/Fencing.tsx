@@ -69,7 +69,7 @@ export default function Fencing() {
         backgroundImage="/fencing-hsc-hero-1.webp"
         carouselImages={[
           "/fencing-hsc-hero-1.webp",
-          "/hsc-hero-fencing-2.webp",
+          "/fencing-hsc-hero-1.webp",
           "/hsc-hero-decking-2.webp"
         ]}
         features={[
