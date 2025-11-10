@@ -70,8 +70,8 @@ export default function ArtificialTurf() {
         backgroundImage="/hsc-hero-art-turf.webp"
         carouselImages={[
           "/hsc-hero-art-turf.webp",
-          "/hsc-art-turf-hero .webp",
-          "/hero-art-turf-hsc.webp"
+          "/hero-art-turf-hsc.webp",
+          "/hero-landscaping-3-hsc.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",

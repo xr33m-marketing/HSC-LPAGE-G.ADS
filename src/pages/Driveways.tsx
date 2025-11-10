@@ -91,7 +91,7 @@ export default function Driveways() {
         carouselImages={[
           "/HSC-HERO-DRIVEWAY.webp",
           "/d-way-hero-hsc-3.webp",
-          "/d-way-hero-hsc-1.webp"
+          "/fencing-hsc-hero-1.webp"
         ]}
         features={[
           "Free On-Site Estimate & Consultation — Full Design Provided After Approval",
