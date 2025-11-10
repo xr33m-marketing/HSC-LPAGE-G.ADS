@@ -19,24 +19,24 @@ const fencingHeadlines = [
 
 const beforeAfterProjects = [
   {
-    beforeImage: "/BEfore-HSC-Fencing-Gallery.webp",
-    afterImage: "/HSC-fencing-SERVICES (1).webp"
+    beforeImage: "/fencing-BEFORE-HSC-Gallery.webp",
+    afterImage: "/Compostite-fencing-HSC-home.webp"
   },
   {
-    beforeImage: "/HSC-fencing-BEFORE-GALLERY (1).webp",
-    afterImage: "/SERVICES-fencing-HSC (1).webp"
+    beforeImage: "/HSC-fencing-BEFORE-GALLERY.webp",
+    afterImage: "/SERVICES-fencing-HSC.webp"
   },
   {
-    beforeImage: "/fencing-BEFORE-HSC-Gallery (1).webp",
-    afterImage: "/Compostite-fencing-HSC-home (1).webp"
-  },
-  {
-    beforeImage: "/Gallery-Before-HSC-fencing (1) copy.webp",
+    beforeImage: "/Gallery-Before-HSC-fencing.webp",
     afterImage: "/fencing-home-projects-HSC.webp"
   },
   {
     beforeImage: "/fencing-before-HSC-GAllery.webp",
-    afterImage: "/fencing-HSC-SERVICES-Landscaping.png"
+    afterImage: "/fencing-HSC-SERVICES-Landscaping.webp"
+  },
+  {
+    beforeImage: "/BEfore-HSC-Fencing-Gallery copy.webp",
+    afterImage: "/HSC-fencing-SERVICES.webp"
   }
 ];
 
