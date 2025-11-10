@@ -192,7 +192,7 @@ export default function ServiceHero({
 
             {/* Subheadline - Agitate */}
             <ScrollReveal width="100%" delay={0.4}>
-              <div className="text-white/90 text-base md:text-lg lg:text-xl leading-loose max-w-3xl mx-auto drop-shadow-md font-light tracking-wide space-y-3">
+              <div className="text-white text-base md:text-lg lg:text-xl leading-loose max-w-3xl mx-auto font-normal tracking-wide space-y-4" style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}>
                 {description.split('—').map((line, index) => (
                   <p key={index} className="mx-auto">
                     {line.trim()}
