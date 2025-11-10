@@ -210,17 +210,6 @@ export default function PatiosDecking() {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-16 bg-granite-medium">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-white">Every patio starts as a problem.</h2>
-          <p className="text-center max-w-2xl mx-auto text-gray-300 mt-4 mb-12 text-lg">
-            Too cracked. Too uneven. Too dangerous. These ones were exactly the same — until we got stuck in.
-          </p>
-          <BeforeAfterCarousel projects={beforeAfterProjects} />
-        </div>
-      </section>
-
       {/* Recent Projects Section */}
       <section className="py-16 bg-granite-dark">
         <div className="container mx-auto px-4">
