@@ -14,13 +14,13 @@ import Footer from '../../components/Footer';
 import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
 
 const recentProjects = [
-  { image: '', alt: 'Retaining Wall Project 1' },
-  { image: '', alt: 'Retaining Wall Project 2' },
-  { image: '', alt: 'Retaining Wall Project 3' },
-  { image: '', alt: 'Retaining Wall Project 4' },
-  { image: '', alt: 'Retaining Wall Project 5' },
-  { image: '', alt: 'Retaining Wall Project 6' },
-  { image: '', alt: 'Retaining Wall Project 7' }
+  { image: '/Glasgow-walls-HSC-landscaping.webp', alt: 'Glasgow Retaining Wall Project' },
+  { image: '/Screenshot 2025-11-10 12.23.26.png', alt: 'Wall Construction Progress' },
+  { image: '/Screenshot 2025-11-10 12.23.03.png', alt: 'Wall Installation Work' },
+  { image: '/wall-HSC-Landscaping-Glasgow.webp', alt: 'Completed Wall in Glasgow' },
+  { image: '/wall-before-HSC-MASONRY.webp', alt: 'Wall Before Masonry Work' },
+  { image: '/WALl-after-HSC_MASONRY.webp', alt: 'Wall After Masonry Completion' },
+  { image: '/HSC-wall-Glasgow-landscaping.webp', alt: 'Professional Wall Installation' }
 ];
 
 const wallHeadlines = [
