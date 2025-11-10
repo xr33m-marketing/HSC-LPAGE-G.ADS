@@ -259,39 +259,6 @@ export default function PatiosDecking() {
         className="bg-granite-medium"
       />
 
-      {/* Trust Indicators Section */}
-      <section className="py-16 bg-granite-light">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Glasgow Homeowners Trust Us</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Star className="w-12 h-12 text-yellow-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">100+ 5-Star Reviews</h3>
-              <p className="text-gray-300">On Google & Trustpilot</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Clock className="w-12 h-12 text-[#FF5733]" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">17+ Years Experience</h3>
-              <p className="text-gray-300">Serving Glasgow</p>
-            </div>
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <Shield className="w-12 h-12 text-green-400" />
-              </div>
-              <h3 className="text-xl font-bold mb-2 text-white">10-Year Guarantee</h3>
-              <p className="text-gray-300">Workmanship Warranty</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Referral Section */}
-      <ReferralSection service="patio" />
-
       {/* Local Map & Trust Badges Section */}
       <section className="py-16 bg-granite-medium">
         <div className="container mx-auto px-4">
