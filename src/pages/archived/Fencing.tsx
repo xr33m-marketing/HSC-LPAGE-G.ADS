@@ -65,6 +65,7 @@ export default function Fencing() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={fencingHeadlines}
+        description="You notice it every time you're in the garden — the leaning posts, loose panels, gaps everywhere. It's gone from concerning to a security risk. Our experts transform damaged fencing into secure boundaries — backed by a 24-month workmanship guarantee."
         backgroundImage="/fencing-hsc-hero-1.webp"
         carouselImages={[
           "/fencing-hsc-hero-1.webp",

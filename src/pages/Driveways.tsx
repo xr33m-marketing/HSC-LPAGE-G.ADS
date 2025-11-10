@@ -86,6 +86,7 @@ export default function Driveways() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={drivewayHeadlines}
+        description="You notice it every time you park — the cracks, the weeds, the uneven patches. It's gone from annoying to embarrassing. Our experts transform tired driveways into flawless entrances — backed by a 24-month workmanship guarantee."
         backgroundImage="/HSC-HERO-DRIVEWAY.webp"
         carouselImages={[
           "/HSC-HERO-DRIVEWAY.webp",

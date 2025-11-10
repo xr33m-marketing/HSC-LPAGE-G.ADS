@@ -104,6 +104,7 @@ export default function PatiosDecking() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={patioHeadlines}
+        description="You see it every time you step outside — the cracked slabs, rotting timber, uneven surfaces. It's gone from unusable to dangerous. Our experts transform tired outdoor spaces into stunning entertainment areas — backed by a 24-month workmanship guarantee."
         backgroundImage="/hero-hsc-patios-3.webp"
         carouselImages={[
           "/hero-hsc-patios-3.webp",

@@ -66,6 +66,7 @@ export default function ArtificialTurf() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={turfHeadlines}
+        description="You see it every time the kids want to play — the muddy patches, brown dead grass, constant maintenance. It's gone from tiring to unbearable. Our experts transform patchy lawns into perfect green surfaces — backed by a 24-month workmanship guarantee."
         backgroundImage="/hsc-hero-art-turf.webp"
         carouselImages={[
           "/hsc-hero-art-turf.webp",

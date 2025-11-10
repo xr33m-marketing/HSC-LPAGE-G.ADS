@@ -96,6 +96,7 @@ export default function Landscaping() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={landscapingHeadlines}
+        description="You see it every time you look outside — the waterlogged grass, sunken decking, uneven surfaces. It's gone from disappointing to frustrating. Our experts transform neglected gardens into beautiful outdoor spaces — backed by a 24-month workmanship guarantee."
         backgroundImage="/hero-landscping-HSC.webp"
         carouselImages={[
           "/hero-landscping-HSC.webp",

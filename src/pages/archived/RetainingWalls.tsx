@@ -103,6 +103,7 @@ export default function RetainingWalls() {
       <StickyTopNavBar />
       <ServiceHero
         headlines={wallHeadlines}
+        description="You notice it every time it rains — the soil erosion, sloped garden, water damage. It's gone from a minor issue to a structural concern. Our experts transform unstable slopes into secure level spaces — backed by a 24-month workmanship guarantee."
         backgroundImage="/walls-hsc-hero-3.webp"
         carouselImages={[
           "/walls-hsc-hero-3.webp",
