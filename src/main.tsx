@@ -14,10 +14,10 @@ initGclidTracking();
 // Lazy load pages with prefetching hints
 const Landscaping = () => import(/* webpackPrefetch: true */ './pages/Landscaping');
 const Driveways = () => import(/* webpackPrefetch: true */ './pages/Driveways');
-const ArtificialTurf = () => import(/* webpackPrefetch: true */ './pages/archived/ArtificialTurf');
-const Fencing = () => import(/* webpackPrefetch: true */ './pages/archived/Fencing');
-const PatiosDecking = () => import(/* webpackPrefetch: true */ './pages/archived/PatiosDecking');
-const RetainingWalls = () => import(/* webpackPrefetch: true */ './pages/archived/RetainingWalls');
+const ArtificialTurf = () => import(/* webpackPrefetch: true */ './pages/ArtificialTurf');
+const Fencing = () => import(/* webpackPrefetch: true */ './pages/Fencing');
+const PatiosDecking = () => import(/* webpackPrefetch: true */ './pages/PatiosDecking');
+const RetainingWalls = () => import(/* webpackPrefetch: true */ './pages/RetainingWalls');
 const PrivacyPolicy = () => import(/* webpackPrefetch: true */ './pages/PrivacyPolicy');
 const ThankYouDriveways = () => import(/* webpackPrefetch: true */ './pages/thank-you/ThankYouDriveways');
 
