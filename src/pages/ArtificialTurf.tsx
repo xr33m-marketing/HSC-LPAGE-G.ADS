@@ -1,14 +1,14 @@
 import React from 'react';
 import { Star, Check, Clock, Shield, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { TestimonialsSection } from '../../components/ui/TestimonialsSection';
-import { FeatureSteps } from '../../components/ui/feature-steps';
-import BeforeAfterCarousel from '../../components/ui/before-after-carousel';
-import ServiceHero from '../../components/ServiceHero';
-import Footer from '../../components/Footer';
-import { ScrollReveal, StaggerContainer, FadeIn } from '../../components/ScrollReveal';
-import { StickyTopNavBar } from '../../components/StickyTopNavBar';
-import { FeaturesSectionWithHoverEffects } from '../../components/ui/features-section-hover';
+import { TestimonialsSection } from '../components/ui/TestimonialsSection';
+import { FeatureSteps } from '../components/ui/feature-steps';
+import BeforeAfterCarousel from '../components/ui/before-after-carousel';
+import ServiceHero from '../components/ServiceHero';
+import Footer from '../components/Footer';
+import { ScrollReveal, StaggerContainer, FadeIn } from '../components/ScrollReveal';
+import { StickyTopNavBar } from '../components/StickyTopNavBar';
+import { FeaturesSectionWithHoverEffects } from '../components/ui/features-section-hover';
 const turfHeadlines = [
   "Patchy Grass?",
   "Muddy Mess?",
